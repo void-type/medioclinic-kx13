@@ -5,11 +5,18 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <NoWarn>7035</NoWarn>
+	  <Nullable>enable</Nullable>
+	  <NoWarn>7035</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="kentico.xperience.aspnetcore.webapp" Version="13.0.52" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+    <PackageReference Include="BuildWebCompiler" Version="1.12.405" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj" />
   </ItemGroup>
 
 </Project>
