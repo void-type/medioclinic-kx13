@@ -1,12 +1,15 @@
+using System.Reflection;
+using Autofac;
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.Web.Mvc;
-
+using MedioClinic.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using XperienceAdapter.Localization;
 
 namespace MedioClinic
 {
@@ -19,7 +22,6 @@ namespace MedioClinic
         {
             Environment = environment;
         }
-
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -58,7 +60,17 @@ namespace MedioClinic
 
             services.AddAntiforgery();
 
-            services.AddControllersWithViews();
+            services.AddLocalization();
+            services.AddControllersWithViews()
+                .AddDataAnnotationsLocalization(options =>
+                {
+                    options.DataAnnotationLocalizerProvider = (type, factory) =>
+                    {
+                        var assemblyName = typeof(SharedResource).GetTypeInfo().Assembly.GetName().Name;
+
+                        return factory.Create("SharedResource", assemblyName);
+                    };
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -91,5 +103,23 @@ namespace MedioClinic
                 });
             });
         }
+
+        // This method called by the runtime automatically
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            try
+            {
+                AutoFacConfig.ConfigureContainer(builder);
+            }
+            catch
+            {
+                RegisterInitializationHandler(builder);
+            }
+        }
+
+        private AutoFacConfig AutoFacConfig => new AutoFacConfig();
+
+        private void RegisterInitializationHandler(ContainerBuilder builder) =>
+            CMS.Base.ApplicationEvents.Initialized.Execute += (sender, eventArgs) => AutoFacConfig.ConfigureContainer(builder);
     }
 }
