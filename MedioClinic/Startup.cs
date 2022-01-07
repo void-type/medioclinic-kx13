@@ -37,7 +37,7 @@ namespace MedioClinic
                 // features.UseEmailTracking();
                 // features.UseCampaignLogger();
                 // features.UseScheduler();
-                // features.UsePageRouting();
+                features.UsePageRouting(new PageRoutingOptions { CultureCodeRouteValuesKey = "culture" });
             });
 
             if (Environment.IsDevelopment())
@@ -96,11 +96,6 @@ namespace MedioClinic
             app.UseEndpoints(endpoints =>
             {
                 endpoints.Kentico().MapRoutes();
-
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("The site has not been configured yet.");
-                });
             });
         }
 
