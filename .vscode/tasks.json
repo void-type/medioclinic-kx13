@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/MedioClinic/MedioClinic.csproj",
+        "${workspaceFolder}/src/MedioClinic/MedioClinic.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/MedioClinic/MedioClinic.csproj",
+        "${workspaceFolder}/src/MedioClinic/MedioClinic.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -32,7 +32,7 @@
       "args": [
         "watch",
         "run",
-        "${workspaceFolder}/MedioClinic/MedioClinic.csproj",
+        "${workspaceFolder}/src/MedioClinic/MedioClinic.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
