@@ -267,12 +267,12 @@ paket-files/
 .history
 
 ### Xperience files ###
-!CMS/CMSModules/System/Debug
-!CMS/CMSAdminControls/Debug
-!CMS/App_Data/CIRepository/**/*
+!src/CMS/CMSModules/System/Debug
+!src/CMS/CMSAdminControls/Debug
+!src/CMS/App_Data/CIRepository/**/*
 
 ### Roslyn ###
-!CMS/bin
-CMS/bin/*
-!CMS/bin/roslyn
-!CMS/bin/roslyn/**/*
+!src/CMS/bin
+src/CMS/bin/*
+!src/CMS/bin/roslyn
+!src/CMS/bin/roslyn/**/*
