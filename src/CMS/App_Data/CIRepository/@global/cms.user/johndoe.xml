@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.user>
+  <Email>jdoe@medioclinic.local</Email>
+  <FirstName>John</FirstName>
+  <FullName>John Doe</FullName>
+  <LastName>Doe</LastName>
+  <MiddleName />
+  <PreferredCultureCode />
+  <PreferredUICultureCode />
+  <UserEnabled>True</UserEnabled>
+  <UserGUID>0cea16b6-2075-4f2c-838d-fac2386cd69a</UserGUID>
+  <UserIsDomain>False</UserIsDomain>
+  <UserIsExternal>False</UserIsExternal>
+  <UserIsHidden>False</UserIsHidden>
+  <UserMFRequired>False</UserMFRequired>
+  <UserName>JohnDoe</UserName>
+  <UserPassword />
+  <UserPasswordFormat>PBKDF2</UserPasswordFormat>
+  <UserPrivilegeLevel>1</UserPrivilegeLevel>
+  <UserStartingAliasPath />
+</cms.user>
