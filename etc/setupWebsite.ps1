@@ -17,11 +17,11 @@ param (
   $LiveSiteDomain = 'medioclinic.kentico.home'
 )
 
-$filePathBase = Resolve-Path -Path "$PSScriptRoot/../src"
+$filePathBase = Resolve-Path -Path "$PSScriptRoot\..\src"
 
 $cmsAppPool = New-WebAppPool -Name $CmsDomain
 
-New-WebSite -Name $CmsDomain -Port 80 -HostHeader $CmsDomain -PhysicalPath "$filePathBase/CMS" -ApplicationPool $cmsAppPool.Name
+New-WebSite -Name $CmsDomain -Port 80 -HostHeader $CmsDomain -PhysicalPath "$filePathBase\CMS" -ApplicationPool $cmsAppPool.Name
 New-WebBinding -Name $CmsDomain -IPAddress "*" -Port 443 -HostHeader $CmsDomain -Protocol "https" -SslFlags 1
 $cmsHttpsBinding = Get-WebBinding -Name $CmsDomain -Port 443 -Protocol "https"
 $cmsHttpsBinding.AddSslCertificate($CertificateThumbprint, "my")
@@ -31,7 +31,7 @@ $liveSiteAppPool = New-WebAppPool -Name $LiveSiteDomain
 $liveSiteAppPool.managedRuntimeVersion = ""
 $liveSiteAppPool | Set-Item
 
-New-WebSite -Name $LiveSiteDomain -Port 80 -HostHeader $LiveSiteDomain -PhysicalPath "$filePathBase/MedioClinic" -ApplicationPool $liveSiteAppPool.Name
+New-WebSite -Name $LiveSiteDomain -Port 80 -HostHeader $LiveSiteDomain -PhysicalPath "$filePathBase\MedioClinic" -ApplicationPool $liveSiteAppPool.Name
 New-WebBinding -Name $LiveSiteDomain -IPAddress "*" -Port 443 -HostHeader $LiveSiteDomain -Protocol "https"
 $cmsHttpsBinding = Get-WebBinding -Name $LiveSiteDomain -Port 443 -Protocol "https"
 $cmsHttpsBinding.AddSslCertificate($CertificateThumbprint, "my")
