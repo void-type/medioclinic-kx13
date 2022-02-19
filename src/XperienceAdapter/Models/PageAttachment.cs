@@ -1,9 +1,11 @@
+﻿using Kentico.Content.Web.Mvc;
 using System;
-using System.Collections.Generic;
-using Kentico.Content.Web.Mvc;
 
 namespace XperienceAdapter.Models
 {
+    /// <summary>
+    /// Page attachment.
+    /// </summary>
     public class PageAttachment
     {
         public int Id { get; set; }

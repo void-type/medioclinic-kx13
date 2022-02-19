@@ -1,1 +1,1 @@
-[assembly: CMS.AssemblyDiscoverable]
+﻿[assembly: CMS.AssemblyDiscoverable]

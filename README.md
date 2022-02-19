@@ -2,6 +2,10 @@
 
 This is my working version of the [Kentico Xperience 13 Training](https://github.com/Kentico/xperience-training-13)
 
+The CMS Administrator has no password.
+The SQL login should be restored with the bacpac, but you might have to edit the login to map to the db user.
+You need to make an IIS website at localhost and an application pointing to /src/CMS with an alias of medioclinic-cms.
+
 Everything below is from the README of that repository.
 
 ## About the repo
@@ -23,31 +27,31 @@ See [Kentico Xperience sample sites](https://devnet.kentico.com/articles/kentico
 Administration application prerequisites:
 
 * Operating systems
-    * Windows 8.1 and newer
-    * Windows Server 2012 and newer
+  * Windows 8.1 and newer
+  * Windows Server 2012 and newer
 * IIS features
-    * ASP.NET
-    * .NET extensibility
-    * ISAPI extensions
-    * ISAPI filters
-    * Static content
+  * ASP.NET
+  * .NET extensibility
+  * ISAPI extensions
+  * ISAPI filters
+  * Static content
 * .NET
-    * .NET Framework 4.8 or newer
+  * .NET Framework 4.8 or newer
 
 Live site application prerequisites:
 
 * .NET
-    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) with ASP.NET Core runtime (included in [Visual Studio 2019 16.4](https://visualstudio.com/vs) or newer)
-    
+  * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) with ASP.NET Core runtime (included in [Visual Studio 2019 16.4](https://visualstudio.com/vs) or newer)
+
 Common prerequisites:
 
 * Visual Studio 2019 Community or higher
-    * ASP.NET and web development workload
-    * .NET Core cross-platform development workload
-    * Git for Windows
-    * GitHub Extension for Visual Studio
+  * ASP.NET and web development workload
+  * .NET Core cross-platform development workload
+  * Git for Windows
+  * GitHub Extension for Visual Studio
 * [SQL Server 2012 Express or higher](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-    * Case-insensitive collation
+  * Case-insensitive collation
 
 For a complete list of system requirements, refer to our [documentation](https://docs.xperience.io/installation/system-requirements).
 

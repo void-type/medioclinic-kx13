@@ -1,32 +1,37 @@
-using System.Reflection;
-using Autofac;
+﻿using Autofac;
+using Core.Configuration;
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.Web.Mvc;
 using MedioClinic.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Reflection;
 using XperienceAdapter.Localization;
 
 namespace MedioClinic
 {
     public class Startup
     {
-        public IWebHostEnvironment Environment { get; }
+        private readonly IConfiguration _configuration;
+        private readonly IWebHostEnvironment _environment;
 
 
-        public Startup(IWebHostEnvironment environment)
+        public Startup(IWebHostEnvironment environment, IConfiguration configuration)
         {
-            Environment = environment;
+            _environment = environment;
+            _configuration = configuration;
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<XperienceOptions>(_configuration.GetSection(nameof(XperienceOptions)));
+
             // Enable desired Kentico Xperience features
             var kenticoServiceCollection = services.AddKentico(features =>
             {
@@ -40,7 +45,7 @@ namespace MedioClinic
                 features.UsePageRouting(new PageRoutingOptions { CultureCodeRouteValuesKey = "culture" });
             });
 
-            if (Environment.IsDevelopment())
+            if (_environment.IsDevelopment())
             {
                 // By default, Xperience sends cookies using SameSite=Lax. If the administration and live site applications
                 // are hosted on separate domains, this ensures cookies are set with SameSite=None and Secure. The configuration
@@ -76,7 +81,7 @@ namespace MedioClinic
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
-            if (Environment.IsDevelopment())
+            if (_environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseBrowserLink();

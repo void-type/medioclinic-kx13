@@ -4,8 +4,8 @@
 # Install SQL Server Developer and SSMS by hand using defaults or desired settings.
 # Restore the db bacpac
 
-# Allow SQL Firewall port
-netsh advfirewall firewall add rule name = SQLPort dir = in protocol = tcp action = allow localport = 1433 remoteip = localsubnet profile = PRIVATE
+# Allow SQL Firewall port if needed externally
+# netsh advfirewall firewall add rule name = SQLPort dir = in protocol = tcp action = allow localport = 1433 remoteip = localsubnet profile = PRIVATE
 
 # Setup IIS Web Server
 $features = @(

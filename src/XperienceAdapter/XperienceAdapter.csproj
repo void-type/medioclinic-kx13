@@ -6,11 +6,19 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" PrivateAssets="all" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="13.0.52" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Core\Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Logging\" />
 	</ItemGroup>
 
 </Project>

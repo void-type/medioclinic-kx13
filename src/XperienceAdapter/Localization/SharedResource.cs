@@ -1,4 +1,4 @@
-namespace XperienceAdapter.Localization
+﻿namespace XperienceAdapter.Localization
 {
     public class SharedResource
     {

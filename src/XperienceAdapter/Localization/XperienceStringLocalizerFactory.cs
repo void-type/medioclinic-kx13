@@ -1,5 +1,5 @@
+﻿using Microsoft.Extensions.Localization;
 using System;
-using Microsoft.Extensions.Localization;
 
 namespace XperienceAdapter.Localization
 {

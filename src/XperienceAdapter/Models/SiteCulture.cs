@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace XperienceAdapter.Models
 {
@@ -6,9 +6,9 @@ namespace XperienceAdapter.Models
     {
         public static bool operator ==(SiteCulture? a, SiteCulture? b)
         {
-            if (ReferenceEquals(a, null))
+            if (a is null)
             {
-                return ReferenceEquals(b, null);
+                return b is null;
             }
 
             return a.Equals(b);
@@ -16,9 +16,9 @@ namespace XperienceAdapter.Models
 
         public static bool operator !=(SiteCulture? a, SiteCulture? b)
         {
-            if (ReferenceEquals(a, null))
+            if (a is null)
             {
-                return !ReferenceEquals(b, null);
+                return b is object;
             }
 
             return !a.Equals(b);

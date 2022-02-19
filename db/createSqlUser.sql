@@ -10,5 +10,3 @@ USE [medioclinic]
 GO
 ALTER ROLE [db_owner] ADD MEMBER [medioclinic]
 GO
-
--- By default the CMS admin user has no password, just use Administrator and <blank> to get in.

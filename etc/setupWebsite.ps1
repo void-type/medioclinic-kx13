@@ -17,6 +17,8 @@ param (
   $LiveSiteDomain = 'medioclinic.kentico.home'
 )
 
+# TODO: This doesn't work with the trial license, but might be useful to go to prod.
+
 $filePathBase = Resolve-Path -Path "$PSScriptRoot\..\src"
 
 $cmsAppPool = New-WebAppPool -Name $CmsDomain
