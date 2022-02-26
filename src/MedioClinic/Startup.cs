@@ -4,8 +4,10 @@ using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.Web.Mvc;
 using MedioClinic.Configuration;
+using MedioClinic.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -86,16 +88,40 @@ namespace MedioClinic
                 app.UseDeveloperExceptionPage();
                 app.UseBrowserLink();
             }
+            else
+            {
+                app.UseExceptionHandler(errorApp =>
+                {
+                    errorApp.Run(async context =>
+                    {
+                        context.Response.StatusCode = 500;
+                        context.Response.ContentType = "text/html";
 
+                        await context.Response.WriteAsync("<html lang=\"en\"><body>\r\n");
+                        await context.Response.WriteAsync("An error happened.<br><br>\r\n");
+
+                        var exceptionHandlerPathFeature =
+                            context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
+
+                        if (exceptionHandlerPathFeature?.Error is System.IO.FileNotFoundException)
+                        {
+                            await context.Response.WriteAsync("A file error happened.<br><br>\r\n");
+                        }
+
+                        await context.Response.WriteAsync("<a href=\"/\">Home</a><br>\r\n");
+                        await context.Response.WriteAsync("</body></html>\r\n");
+                        await context.Response.WriteAsync(new string(' ', 512)); // IE padding
+                    });
+                });
+            }
+
+            app.UseLocalizedStatusCodePagesWithReExecute("/{0}/error/{1}/");
             app.UseStaticFiles();
-
             app.UseKentico();
-
+            app.UseRequestCulture();
             app.UseCookiePolicy();
-
             app.UseCors();
-
-            //app.UseAuthentication();
+            // app.UseAuthentication();
             // app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
