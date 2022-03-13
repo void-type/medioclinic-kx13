@@ -1,12 +1,16 @@
-﻿using Autofac;
-using Core;
-using Microsoft.Extensions.Localization;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using XperienceAdapter.Localization;
-using XperienceAdapter.Repositories;
+using System.Threading.Tasks;
+using Autofac;
+
+using Core;
 using XperienceAdapter.Services;
+using XperienceAdapter.Repositories;
+using Business.Repositories;
+using Microsoft.Extensions.Localization;
+using XperienceAdapter.Localization;
 
 namespace MedioClinic.Configuration
 {
@@ -33,12 +37,14 @@ namespace MedioClinic.Configuration
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope();
 
-            builder.RegisterType<XperienceStringLocalizerFactory>()
-                .As<IStringLocalizerFactory>()
+            builder.RegisterType<NavigationRepository>()
+                .As<INavigationRepository>()
                 .InstancePerLifetimeScope();
 
-            builder.RegisterType<RepositoryServices>()
-                .As<IRepositoryServices>()
+            builder.RegisterType<RepositoryServices>().As<IRepositoryServices>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<XperienceStringLocalizerFactory>().As<IStringLocalizerFactory>()
                 .InstancePerLifetimeScope();
         }
     }

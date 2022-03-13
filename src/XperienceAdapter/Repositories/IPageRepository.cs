@@ -1,10 +1,12 @@
-﻿using CMS.DocumentEngine;
-using Core;
-using Kentico.Content.Web.Mvc;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+
+using CMS.DocumentEngine;
+using Kentico.Content.Web.Mvc;
+
+using Core;
 using XperienceAdapter.Models;
 
 namespace XperienceAdapter.Repositories

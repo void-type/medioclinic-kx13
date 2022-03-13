@@ -1,11 +1,17 @@
 ﻿using CMS.Helpers;
+
+using MedioClinic.Models;
+
 using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Rendering;
+
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text.Encodings.Web;
+using System.Threading.Tasks;
 
 namespace MedioClinic.Extensions
 {
@@ -80,7 +86,7 @@ namespace MedioClinic.Extensions
 
         public static IHtmlContent Button(this IHtmlHelper htmlHelper, string buttonResourceKey, IDictionary<string, object> htmlAttributes)
         {
-            string? attributes = default;
+            string attributes = default;
 
             using (var stringWriter = new System.IO.StringWriter())
             {

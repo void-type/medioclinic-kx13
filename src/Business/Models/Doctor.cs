@@ -10,8 +10,8 @@ namespace Business.Models
     /// </summary>
     public class Doctor : User
     {
-        public override IEnumerable<string> SourceColumns => base.SourceColumns.Concat(new[]
-        {
+        public override IEnumerable<string> SourceColumns => base.SourceColumns.Concat(new[] 
+        { 
             "Degree",
             "EmergencyShift",
             "Biography",

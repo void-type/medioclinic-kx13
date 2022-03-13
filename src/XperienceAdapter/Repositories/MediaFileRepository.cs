@@ -1,16 +1,22 @@
-﻿using CMS.Base;
-using CMS.DataEngine;
-using CMS.Helpers;
-using CMS.MediaLibrary;
-using CMS.Membership;
-using Core.Configuration;
-using Kentico.Content.Web.Mvc;
-using Microsoft.Extensions.Options;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+
+using CMS.Base;
+using CMS.DataEngine;
+using CMS.Helpers;
+using CMS.IO;
+using CMS.MediaLibrary;
+using CMS.Membership;
+
+using Core.Configuration;
+
+using Kentico.Content.Web.Mvc;
+
+using Microsoft.Extensions.Options;
+
 using XperienceAdapter.Models;
 
 namespace XperienceAdapter.Repositories
@@ -42,10 +48,10 @@ namespace XperienceAdapter.Repositories
         }
 
         public async Task<Guid> AddMediaFileAsync(IUploadedFile uploadedFile,
-            int mediaLibraryId,
-            string? libraryFolderPath = default,
-            bool checkPermissions = default,
-            CancellationToken? cancellationToken = default)
+                                                  int mediaLibraryId,
+                                                  string? libraryFolderPath = default,
+                                                  bool checkPermissions = default,
+                                                  CancellationToken? cancellationToken = default)
         {
             if (uploadedFile is null)
             {
@@ -58,10 +64,10 @@ namespace XperienceAdapter.Repositories
         }
 
         public async Task<Guid> AddMediaFileAsync(IUploadedFile uploadedFile,
-            string mediaLibraryName,
-            string? libraryFolderPath = default,
-            bool checkPermissions = default,
-            CancellationToken? cancellationToken = default)
+                                              string mediaLibraryName,
+                                              string? libraryFolderPath = default,
+                                              bool checkPermissions = default,
+                                              CancellationToken? cancellationToken = default)
         {
             if (uploadedFile is null)
             {
@@ -78,7 +84,7 @@ namespace XperienceAdapter.Repositories
             return await AddMediaFileInternalAsync(uploadedFile, libraryFolderPath, library, checkPermissions);
         }
 
-        private Task<Guid> AddMediaFileInternalAsync(IUploadedFile uploadedFile, string? libraryFolderPath, MediaLibraryInfo mediaLibraryInfo, bool checkPermissions)
+        private async Task<Guid> AddMediaFileInternalAsync(IUploadedFile uploadedFile, string? libraryFolderPath, MediaLibraryInfo mediaLibraryInfo, bool checkPermissions)
         {
             if (checkPermissions && !mediaLibraryInfo.CheckPermissions(PermissionsEnum.Create, _siteService.CurrentSite.SiteName, MembershipContext.AuthenticatedUser))
             {
@@ -86,7 +92,8 @@ namespace XperienceAdapter.Repositories
                     $"The user {MembershipContext.AuthenticatedUser.FullName} lacks permissions to the {mediaLibraryInfo.LibraryDisplayName} library.");
             }
 
-            MediaFileInfo mediaFile;
+            MediaFileInfo mediaFile = default;
+
             try
             {
                 mediaFile = !string.IsNullOrEmpty(libraryFolderPath)
@@ -100,7 +107,7 @@ namespace XperienceAdapter.Repositories
 
             _mediaFileInfoProvider.Set(mediaFile);
 
-            return Task.FromResult(mediaFile.FileGUID);
+            return mediaFile.FileGUID;
         }
 
         private async Task<MediaLibraryInfo> GetMediaLibrary(CancellationToken? cancellationToken, int? libraryId = default, string? libraryName = default)
@@ -115,8 +122,7 @@ namespace XperienceAdapter.Repositories
                 : await _mediaLibraryInfoProvider.GetAsync(libraryName, _siteService.CurrentSite.SiteID, cancellationToken);
         }
 
-        [Obsolete]
-        public MediaLibraryFile? GetMediaFile(Guid fileGuid)
+        public MediaLibraryFile GetMediaFile(Guid fileGuid)
         {
             var mediaFileInfo = MediaFileInfoProvider.GetMediaFileInfo(fileGuid, _siteService.CurrentSite.SiteName);
 

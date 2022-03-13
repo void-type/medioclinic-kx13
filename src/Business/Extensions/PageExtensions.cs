@@ -1,7 +1,8 @@
-﻿using CMS.DocumentEngine;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
+using CMS.DocumentEngine;
 
 namespace Business.Extensions
 {
@@ -19,7 +20,7 @@ namespace Business.Extensions
                     {
                         daysOfWeek.Add(dayOfWeek);
                     }
-                }
+                } 
             }
 
             return daysOfWeek;

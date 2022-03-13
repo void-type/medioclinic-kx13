@@ -1,7 +1,9 @@
-﻿using CMS.SiteProvider;
-using System;
+﻿using System;
 using System.Globalization;
 using System.Linq;
+
+using CMS.SiteProvider;
+
 using XperienceAdapter.Models;
 using XperienceAdapter.Repositories;
 

@@ -1,15 +1,16 @@
-﻿using CMS.Helpers;
-using Microsoft.Extensions.Localization;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading;
+using Microsoft.Extensions.Localization;
+
+using CMS.Helpers;
 
 namespace XperienceAdapter.Localization
 {
     public class XperienceStringLocalizer : IStringLocalizer
     {
-        private readonly string _cultureName;
+        private string _cultureName;
 
         public XperienceStringLocalizer() : this(Thread.CurrentThread.CurrentUICulture) { }
 

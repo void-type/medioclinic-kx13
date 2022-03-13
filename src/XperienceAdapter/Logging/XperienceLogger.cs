@@ -1,13 +1,18 @@
-﻿using CMS.Base;
-using CMS.Core;
+﻿using System;
 using Microsoft.Extensions.Logging;
-using System;
+
+using CMS.Core;
+using CMS.Base;
 
 namespace XperienceAdapter.Logging
 {
+    /// <summary>
+    /// Xperience implementation of <see cref="ILogger{TCategoryName}"/>.
+    /// </summary>
     public class XperienceLogger : ILogger
     {
         private readonly string _name;
+
         private readonly IEventLogService _eventLogService;
 
         public XperienceLogger(string name, IEventLogService eventLogService)
@@ -50,18 +55,25 @@ namespace XperienceAdapter.Logging
                 {
                 }
 
-                var eventData = !string.IsNullOrEmpty(eventId.Name)
-                    ? new EventLogData(eventType, _name, eventId.Name)
+                EventLogData eventData;
+
+                if (!string.IsNullOrEmpty(eventId.Name))
+                {
+                    eventData = new EventLogData(eventType, _name, eventId.Name)
                     {
                         SiteID = siteId,
                         EventDescription = message,
                         Exception = exception
-                    }
-                    : new EventLogData(eventType, _name, message)
+                    };
+                }
+                else
+                {
+                    eventData = new EventLogData(eventType, _name, message)
                     {
                         SiteID = siteId,
                         Exception = exception
                     };
+                }
 
                 // Xperience buffers all logged events in the memory, up to the point when
                 // the database is available. No need to buffer or ask about the database

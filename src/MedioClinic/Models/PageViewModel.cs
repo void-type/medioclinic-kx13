@@ -1,4 +1,5 @@
-﻿using Kentico.Content.Web.Mvc;
+﻿using CMS.Base;
+using Kentico.Content.Web.Mvc;
 
 namespace MedioClinic.Models
 {
@@ -14,8 +15,8 @@ namespace MedioClinic.Models
         public static PageViewModel GetPageViewModel(
             IPageMetadata pageMetadata,
             string? message = default,
-            bool displayMessage = true,
-            bool displayAsRaw = default,
+            bool displayMessage = true, 
+            bool displayAsRaw = default, 
             MessageType messageType = MessageType.Info) =>
             new PageViewModel()
             {
@@ -38,8 +39,8 @@ namespace MedioClinic.Models
             TViewModel data,
             IPageMetadata pageMetadata,
             string? message = default,
-            bool displayMessage = true,
-            bool displayAsRaw = default,
+            bool displayMessage = true, 
+            bool displayAsRaw = default, 
             MessageType messageType = MessageType.Info) =>
             new PageViewModel<TViewModel>()
             {

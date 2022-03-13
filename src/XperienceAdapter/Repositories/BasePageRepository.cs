@@ -1,11 +1,14 @@
-﻿using CMS.DocumentEngine;
-using CMS.Helpers;
-using Kentico.Content.Web.Mvc;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
+
+using CMS.DocumentEngine;
+using CMS.Helpers;
+using Kentico.Content.Web.Mvc;
+
 using XperienceAdapter.Models;
 using XperienceAdapter.Services;
 
@@ -114,6 +117,8 @@ namespace XperienceAdapter.Repositories
 
             return MapPages(result, additionalMapper, includeAttachments);
         }
+
+
 
         /// <summary>
         /// Maps query results onto DTOs.
@@ -240,8 +245,8 @@ namespace XperienceAdapter.Repositories
         }
 
         protected MultiDocumentQuery GetQueryForMultipleTypes(
-            IEnumerable<string> types,
-            SiteCulture? culture,
+            IEnumerable<string> types, 
+            SiteCulture? culture, 
             Action<MultiDocumentQuery>? filter)
         {
             var query = new MultiDocumentQuery();

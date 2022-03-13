@@ -1,14 +1,16 @@
-﻿using Business.Extensions;
-using Business.Models;
-using CMS.DocumentEngine;
-using CMS.Membership;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+
+using CMS.DocumentEngine;
+using CMS.Membership;
+
 using XperienceAdapter.Extensions;
 using XperienceAdapter.Repositories;
 using XperienceAdapter.Services;
+using Business.Extensions;
+using Business.Models;
 
 namespace Business.Repositories
 {
@@ -31,12 +33,12 @@ namespace Business.Repositories
             dto.Degree = page.Degree;
             dto.Biography = page.Fields.Biography;
             dto.Specialty = page.Specialty;
-
+ 
             if (page.Fields.BackdropPicture != null)
             {
-                dto.BackdropPictureUrl = _repositoryServices.PageAttachmentUrlRetriever.Retrieve(page.Fields.BackdropPicture);
+                dto.BackdropPictureUrl = _repositoryServices.PageAttachmentUrlRetriever.Retrieve(page.Fields.BackdropPicture); 
             }
-
+            
             var culture = Thread.CurrentThread.CurrentUICulture.ToSiteCulture();
 
             if (culture != null)

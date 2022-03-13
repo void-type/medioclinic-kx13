@@ -234,9 +234,6 @@
   <data name="pagetemplatesmvc.requesterror" xml:space="preserve">
     <value>An error occurred while attempting to retrieve page templates. Contact your system administrator and check that the page builder feature is registered correctly in the MVC project.</value>
   </data>
-  <data name="pagetemplatesmvc.networkerror" xml:space="preserve">
-    <value>An error occurred while attempting to retrieve page templates. The live site application is not running or is not accessible.</value>
-  </data>
   <data name="pagetemplatesmvc.selector.cannotretrievetemplates" xml:space="preserve">
     <value>Page template selector cannot retrieve available page templates.</value>
   </data>

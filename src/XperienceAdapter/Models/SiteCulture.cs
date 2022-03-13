@@ -2,13 +2,16 @@
 
 namespace XperienceAdapter.Models
 {
+    /// <summary>
+    /// Site culture.
+    /// </summary>
     public class SiteCulture : IEquatable<SiteCulture?>
     {
         public static bool operator ==(SiteCulture? a, SiteCulture? b)
         {
-            if (a is null)
+            if (ReferenceEquals(a, null))
             {
-                return b is null;
+                return ReferenceEquals(b, null);
             }
 
             return a.Equals(b);
@@ -16,9 +19,9 @@ namespace XperienceAdapter.Models
 
         public static bool operator !=(SiteCulture? a, SiteCulture? b)
         {
-            if (a is null)
+            if (ReferenceEquals(a, null))
             {
-                return b is object;
+                return !ReferenceEquals(b, null);
             }
 
             return !a.Equals(b);
@@ -28,6 +31,9 @@ namespace XperienceAdapter.Models
 
         public string? ShortName { get; set; }
 
+        /// <summary>
+        /// In the form of RFC 5646 (e.g. "en-US").
+        /// </summary>
         public string? IsoCode { get; set; }
 
         public bool IsDefault { get; set; }

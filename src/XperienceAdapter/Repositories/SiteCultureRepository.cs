@@ -1,12 +1,14 @@
-﻿using CMS.Base;
-using CMS.Helpers;
-using CMS.Localization;
-using CMS.SiteProvider;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+
+using CMS.Base;
+using CMS.Helpers;
+using CMS.Localization;
+using CMS.SiteProvider;
+
 using XperienceAdapter.Models;
 
 namespace XperienceAdapter.Repositories
@@ -49,5 +51,6 @@ namespace XperienceAdapter.Repositories
 
         public SiteCulture GetByExactIsoCode(string isoCode) =>
             GetAll().FirstOrDefault(culture => culture.IsoCode?.Equals(isoCode, StringComparison.OrdinalIgnoreCase) == true);
+
     }
 }

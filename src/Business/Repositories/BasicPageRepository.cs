@@ -1,7 +1,8 @@
 ﻿using CMS.DocumentEngine;
+
+using XperienceAdapter.Services;
 using XperienceAdapter.Models;
 using XperienceAdapter.Repositories;
-using XperienceAdapter.Services;
 
 namespace Business.Repositories
 {
