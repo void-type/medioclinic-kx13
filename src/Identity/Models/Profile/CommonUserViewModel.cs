@@ -1,9 +1,8 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using Business.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
-using Business.Models;
+using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Identity.Models.Profile
 {

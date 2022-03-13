@@ -1,28 +1,26 @@
-﻿using System;
+﻿using Business.Models;
+using Business.Services;
+using CMS.Base;
+using CMS.Helpers;
+using CMS.Membership;
+using Core.Configuration;
+using EnumsNET;
+using Identity.Extensions;
+using Identity.Models;
+using Identity.Models.Profile;
+using Identity.Services;
+using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using EnumsNET;
-
-using CMS.Base;
-using CMS.Helpers;
-using CMS.Membership;
-
-using XperienceAdapter.Logging;
-using Core.Configuration;
-using Business.Models;
-using Business.Services;
-using Identity.Extensions;
-using Identity.Models;
-using Identity.Models.Profile;
-using Identity.Services;
-using Microsoft.Extensions.Localization;
 using XperienceAdapter.Localization;
+using XperienceAdapter.Logging;
 
 namespace Identity
 {

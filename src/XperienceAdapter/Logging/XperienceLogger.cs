@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.Extensions.Logging;
-
+﻿using CMS.Base;
 using CMS.Core;
-using CMS.Base;
+using Microsoft.Extensions.Logging;
+using System;
 
 namespace XperienceAdapter.Logging
 {

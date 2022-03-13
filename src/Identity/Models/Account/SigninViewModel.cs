@@ -1,6 +1,5 @@
-﻿using System.ComponentModel;
-
-using Business.Models;
+﻿using Business.Models;
+using System.ComponentModel;
 
 namespace Identity.Models.Account
 {

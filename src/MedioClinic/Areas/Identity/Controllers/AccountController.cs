@@ -1,29 +1,27 @@
-﻿using System;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
+﻿using Business.Models;
+using CMS.Base;
+using CMS.DocumentEngine;
+using CMS.Helpers;
+using Core.Configuration;
+using Identity;
+using Identity.Models;
+using Identity.Models.Account;
+using Kentico.Content.Web.Mvc;
+using MedioClinic.Controllers;
+using MedioClinic.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-
-using CMS.Base;
-using CMS.DocumentEngine;
-using CMS.Helpers;
-using Kentico.Content.Web.Mvc;
-
-using Core.Configuration;
-using XperienceAdapter.Repositories;
-using Business.Models;
-using Identity;
-using Identity.Models;
-using Identity.Models.Account;
-using MedioClinic.Controllers;
-using MedioClinic.Models;
-using Microsoft.Extensions.Localization;
+using System;
+using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
 using XperienceAdapter.Localization;
+using XperienceAdapter.Repositories;
 
 namespace MedioClinic.Areas.Identity.Controllers
 {
@@ -35,11 +33,11 @@ namespace MedioClinic.Areas.Identity.Controllers
         private Core.Configuration.IdentityOptions? IdentityOptions => _optionsMonitor.CurrentValue.IdentityOptions;
 
         public AccountController(
-            ILogger<AccountController> logger, 
+            ILogger<AccountController> logger,
             IOptionsMonitor<XperienceOptions> optionsMonitor,
             IStringLocalizer<SharedResource> stringLocalizer,
             IAccountManager accountManager,
-            IPageUrlRetriever pageUrlRetriever) 
+            IPageUrlRetriever pageUrlRetriever)
             : base(logger, optionsMonitor, stringLocalizer, pageUrlRetriever)
         {
             _accountManager = accountManager ?? throw new ArgumentNullException(nameof(accountManager));

@@ -1,17 +1,15 @@
-﻿using System;
+﻿using Core.Configuration;
+using Identity.Models;
+using Kentico.Content.Web.Mvc;
+using MedioClinic.Controllers;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-
-using Kentico.Content.Web.Mvc;
-
-using Core.Configuration;
-using Identity.Models;
-using MedioClinic.Controllers;
-using Microsoft.Extensions.Localization;
 using XperienceAdapter.Localization;
 
 namespace MedioClinic.Areas.Identity.Controllers
@@ -21,7 +19,7 @@ namespace MedioClinic.Areas.Identity.Controllers
         private readonly IPageUrlRetriever _pageUrlRetriever;
 
         public BaseIdentityController(
-            ILogger<BaseController> logger, 
+            ILogger<BaseController> logger,
             IOptionsMonitor<XperienceOptions> optionsMonitor,
             IStringLocalizer<SharedResource> stringLocalizer,
             IPageUrlRetriever pageUrlRetriever)

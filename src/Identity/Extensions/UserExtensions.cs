@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Identity.Models;
+using System;
 using System.Collections.Generic;
-
-using Identity.Models;
 
 namespace Identity.Extensions
 {
@@ -24,7 +23,7 @@ namespace Identity.Extensions
                     {
                         foundRoles |= parsedRole;
                     }
-                } 
+                }
             }
 
             return foundRoles;

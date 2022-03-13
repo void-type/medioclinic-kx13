@@ -1,7 +1,6 @@
 ﻿using Kentico.Content.Web.Mvc;
-
-using XperienceAdapter.Services;
 using XperienceAdapter.Repositories;
+using XperienceAdapter.Services;
 
 namespace Business.Repositories
 {

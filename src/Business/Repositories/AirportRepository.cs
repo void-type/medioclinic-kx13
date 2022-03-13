@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using Core;
-using Business.Models;
-using System.Threading.Tasks;
+﻿using Business.Models;
 using CMS.CustomTables;
-using CMS.Helpers;
-using CMS.DataEngine;
 using CMS.CustomTables.Types.MedioClinic;
-using System.Threading;
+using CMS.DataEngine;
+using CMS.Helpers;
+using Core;
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Business.Repositories
 {

@@ -1,14 +1,12 @@
-﻿using System;
+﻿using Business.Models;
+using CMS.DocumentEngine;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
-
-using CMS.DocumentEngine;
-
+using System.Threading.Tasks;
 using XperienceAdapter.Repositories;
-using Business.Models;
 
 namespace Business.Services
 {

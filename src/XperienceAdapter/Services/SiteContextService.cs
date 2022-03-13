@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.AspNetCore.Http;
-
-using Kentico.Content.Web.Mvc;
+﻿using Kentico.Content.Web.Mvc;
 using Kentico.Web.Mvc;
+using Microsoft.AspNetCore.Http;
+using System;
 
 namespace XperienceAdapter.Services
 {

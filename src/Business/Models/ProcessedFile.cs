@@ -35,7 +35,7 @@ namespace Business.Models
 
             if (disposing)
             {
-                UploadedFile?.Dispose(); 
+                UploadedFile?.Dispose();
             }
 
             _disposed = true;

@@ -1,5 +1,5 @@
-﻿using XperienceAdapter.Services;
-using XperienceAdapter.Repositories;
+﻿using XperienceAdapter.Repositories;
+using XperienceAdapter.Services;
 
 namespace Business.Repositories
 {

@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CMS.Base;
+using CMS.Helpers;
+using Identity.Models;
+using Kentico.Membership;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-
-using Kentico.Membership;
-
-using Identity.Models;
-using CMS.Helpers;
+using System;
+using System.Collections.Generic;
 using System.Security.Claims;
-using CMS.Base;
 using System.Threading.Tasks;
 
 namespace Identity

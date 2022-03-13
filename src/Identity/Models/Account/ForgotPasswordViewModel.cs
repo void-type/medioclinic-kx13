@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Business.Models;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using Microsoft.AspNetCore.Mvc;
-
-using Business.Models;
 
 namespace Identity.Models.Account
 {

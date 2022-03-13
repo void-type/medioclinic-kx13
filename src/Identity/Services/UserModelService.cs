@@ -1,8 +1,7 @@
-﻿using System;
+﻿using Identity.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-
-using Identity.Models;
 
 namespace Identity.Services
 {
@@ -84,7 +83,7 @@ namespace Identity.Services
                     else if (sourceProperty != null)
                     {
                         userProperty.SetValue(userToMapTo, sourceProperty.GetValue(customModel));
-                    } 
+                    }
                 }
             }
 

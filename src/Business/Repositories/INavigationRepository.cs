@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-
-using XperienceAdapter.Models;
-using Business.Models;
-using System.Threading.Tasks;
+﻿using Business.Models;
+using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
+using XperienceAdapter.Models;
 
 namespace Business.Repositories
 {

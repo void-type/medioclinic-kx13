@@ -1,6 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-using Business.Models;
+﻿using Business.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Identity.Models.Account
 {

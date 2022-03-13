@@ -1,14 +1,12 @@
-﻿using System;
+﻿using Business.Models;
+using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-
-
 using XperienceAdapter.Models;
-using Business.Models;
 
 namespace Business.Services
 {

@@ -1,19 +1,16 @@
-﻿using System;
+﻿using CMS.Base;
+using Core.Configuration;
+using Kentico.PageBuilder.Web.Mvc;
+using MedioClinic.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Kentico.PageBuilder.Web.Mvc;
-
-using Microsoft.AspNetCore.Mvc;
-
-using XperienceAdapter.Repositories;
-using MedioClinic.Models;
-using Microsoft.Extensions.Options;
-using Core.Configuration;
-using CMS.Base;
 using XperienceAdapter.Models;
+using XperienceAdapter.Repositories;
 
 namespace MedioClinic.Components.Widgets
 {

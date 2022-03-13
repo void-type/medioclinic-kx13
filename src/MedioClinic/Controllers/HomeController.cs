@@ -1,24 +1,22 @@
-﻿using System;
+﻿using Business.Models;
+using CMS.Base;
+using CMS.DocumentEngine;
+using Core.Configuration;
+using Kentico.Content.Web.Mvc;
+using Kentico.Content.Web.Mvc.Routing;
+using MedioClinic.Controllers;
+using MedioClinic.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-
-using CMS.Base;
-using CMS.DocumentEngine;
-using Kentico.Content.Web.Mvc;
-using Kentico.Content.Web.Mvc.Routing;
-
-using Core.Configuration;
-using XperienceAdapter.Repositories;
-using Business.Models;
-using MedioClinic.Controllers;
-using MedioClinic.Models;
 using XperienceAdapter.Localization;
-using Microsoft.Extensions.Localization;
+using XperienceAdapter.Repositories;
 
 [assembly: RegisterPageRoute(CMS.DocumentEngine.Types.MedioClinic.HomePage.CLASS_NAME, typeof(HomeController))]
 namespace MedioClinic.Controllers

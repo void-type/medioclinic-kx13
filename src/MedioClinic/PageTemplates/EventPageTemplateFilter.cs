@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Kentico.PageBuilder.Web.Mvc.PageTemplates;
+using MedioClinic.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using Kentico.PageBuilder.Web.Mvc.PageTemplates;
-
-using MedioClinic.Components;
 
 namespace MedioClinic.PageTemplates
 {

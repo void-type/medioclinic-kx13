@@ -1,10 +1,8 @@
-﻿using System;
+﻿using MedioClinic.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using MedioClinic.Models;
-
 using XperienceAdapter.Models;
 
 namespace MedioClinic.Components.InlineEditors

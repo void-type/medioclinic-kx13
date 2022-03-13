@@ -1,11 +1,10 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Http;
-
+﻿using Business.Models;
 using Core;
-using Business.Models;
 using Identity.Models;
 using Identity.Models.Account;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
 
 namespace Identity
 {

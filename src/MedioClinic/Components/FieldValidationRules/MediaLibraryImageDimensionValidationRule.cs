@@ -1,14 +1,11 @@
-﻿using System;
+﻿using CMS.Helpers;
+using CMS.MediaLibrary;
+using CMS.SiteProvider;
+using Kentico.Forms.Web.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using CMS.Helpers;
-using CMS.MediaLibrary;
-using CMS.SiteProvider;
-
-using Kentico.Forms.Web.Mvc;
-
 using XperienceAdapter.Repositories;
 
 namespace MedioClinic.Components.FieldValidationRules

@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Kentico.Content.Web.Mvc;
+using System.Collections.Generic;
 using System.Linq;
-
-using Kentico.Content.Web.Mvc;
-
 using XperienceAdapter.Models;
 
 namespace Business.Models

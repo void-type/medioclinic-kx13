@@ -1,8 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
+﻿using Autofac;
+using CMS.Core;
+using CMS.DataEngine;
+using CMS.Helpers;
+using CMS.SiteProvider;
+using Core.Configuration;
+using Identity;
+using Identity.Models;
+using Kentico.Content.Web.Mvc;
+using Kentico.Content.Web.Mvc.Routing;
+using Kentico.Membership;
+using Kentico.PageBuilder.Web.Mvc;
+using Kentico.Web.Mvc;
+using MedioClinic.Areas.Identity.ModelBinders;
+using MedioClinic.Configuration;
+using MedioClinic.Extensions;
+using MedioClinic.Models;
+using MedioClinic.PageTemplates;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,27 +26,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
-using Autofac;
-
-using CMS.Core;
-using CMS.DataEngine;
-using CMS.Helpers;
-using CMS.SiteProvider;
-using Kentico.Content.Web.Mvc;
-using Kentico.Content.Web.Mvc.Routing;
-using Kentico.PageBuilder.Web.Mvc;
-using Kentico.Membership;
-using Kentico.Web.Mvc;
-
-using Core.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
 using XperienceAdapter.Localization;
-using Identity;
-using Identity.Models;
-using MedioClinic.Configuration;
-using MedioClinic.Extensions;
-using MedioClinic.Models;
-using MedioClinic.Areas.Identity.ModelBinders;
-using MedioClinic.PageTemplates;
 
 namespace MedioClinic
 {

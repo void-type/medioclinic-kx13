@@ -1,13 +1,11 @@
-﻿using System;
+﻿using CMS.Base;
+using CMS.MediaLibrary;
+using Kentico.Forms.Web.Mvc;
+using Kentico.Web.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using CMS.Base;
-using CMS.MediaLibrary;
-
-using Kentico.Forms.Web.Mvc;
-using Kentico.Web.Mvc;
 
 namespace MedioClinic.Components.FormComponents
 {

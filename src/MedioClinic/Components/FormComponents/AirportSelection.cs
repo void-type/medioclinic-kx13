@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿using Business.Repositories;
 using Kentico.Forms.Web.Mvc;
 using Kentico.Web.Mvc;
-
-using Business.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MedioClinic.Components.FormComponents
 {

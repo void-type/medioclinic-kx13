@@ -1,9 +1,7 @@
-﻿using System;
+﻿using Business.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
-
-using Business.Models;
-
 using XperienceAdapter.Repositories;
 using XperienceAdapter.Services;
 

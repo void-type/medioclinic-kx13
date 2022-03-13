@@ -1,12 +1,10 @@
-﻿using System;
+﻿using CMS.Globalization;
+using Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-
-using CMS.Globalization;
-
-using Core;
 using XperienceAdapter.Models;
 
 namespace XperienceAdapter.Repositories

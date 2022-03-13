@@ -1,16 +1,12 @@
-﻿using System;
+﻿using CMS.Core;
+using CMS.Membership;
+using Kentico.Forms.Web.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-
-using CMS.Core;
-using CMS.Membership;
-
-using Kentico.Forms.Web.Mvc;
-
-using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
-
 using XperienceAdapter.Repositories;
 
 namespace MedioClinic.Components.FormComponents

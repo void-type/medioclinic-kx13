@@ -1,9 +1,8 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-
+﻿using Business.Models;
 using Core;
+using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
 using XperienceAdapter.Models;
-using Business.Models;
 
 namespace Business.Services
 {

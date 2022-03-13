@@ -1,28 +1,22 @@
-﻿using System;
+﻿using Business.Services;
+using CMS.Base;
+using CMS.DataEngine;
+using CMS.DocumentEngine;
+using CMS.Helpers;
+using CMS.Membership;
+using Core.Configuration;
+using Kentico.Content.Web.Mvc;
+using Kentico.PageBuilder.Web.Mvc;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Mime;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Business.Services;
-
-using CMS.Base;
-using CMS.DataEngine;
-using CMS.DocumentEngine;
-using CMS.Helpers;
-using CMS.Membership;
-
-using Core.Configuration;
-
-using Kentico.Content.Web.Mvc;
-using Kentico.PageBuilder.Web.Mvc;
-
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-
 using XperienceAdapter.Repositories;
 
 namespace MedioClinic.Controllers

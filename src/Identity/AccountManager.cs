@@ -1,21 +1,19 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Business.Extensions;
+using CMS.Helpers;
+using Core.Extensions;
+using Identity.Models;
+using Identity.Models.Account;
+using Kentico.Membership;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.Extensions.Logging;
-
-using CMS.Helpers;
-using Kentico.Membership;
-
-using Core.Extensions;
-using Business.Extensions;
-using Identity.Models;
-using Identity.Models.Account;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 using XperienceAdapter.Localization;
 
 namespace Identity
@@ -45,7 +43,7 @@ namespace Identity
             _actionContextAccessor = actionContextAccessor ?? throw new ArgumentNullException(nameof(actionContextAccessor));
             _messageService = messageService ?? throw new ArgumentNullException(nameof(messageService));
             _signInManager = signInManager ?? throw new ArgumentNullException(nameof(signInManager));
-            
+
         }
 
         public async Task<IdentityManagerResult<RegisterResultState>> RegisterAsync(RegisterViewModel uploadModel, bool emailConfirmed, HttpRequest request)

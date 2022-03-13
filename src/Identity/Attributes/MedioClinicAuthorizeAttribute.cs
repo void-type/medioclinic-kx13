@@ -1,15 +1,13 @@
-﻿using System;
-using System.Linq;
+﻿using CMS.Membership;
+using CMS.SiteProvider;
+using EnumsNET;
+using Identity.Extensions;
+using Identity.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using EnumsNET;
-
-using CMS.Membership;
-using CMS.SiteProvider;
-
-using Identity.Extensions;
-using Identity.Models;
+using System;
+using System.Linq;
 
 namespace Identity.Attributes
 {
@@ -30,8 +28,8 @@ namespace Identity.Attributes
             {
                 var userRoles = UserInfoProvider.GetRolesForUser(user.Identity?.Name, SiteContext.CurrentSiteName);
 
-                if (userRoles?.Any() == true 
-                    && user.Identity?.IsAuthenticated == false 
+                if (userRoles?.Any() == true
+                    && user.Identity?.IsAuthenticated == false
                     || !FlagEnums.HasAnyFlags(Roles, userRoles.ToMedioClinicRoles()))
                 {
                     context.Result = new StatusCodeResult((int)System.Net.HttpStatusCode.Forbidden);

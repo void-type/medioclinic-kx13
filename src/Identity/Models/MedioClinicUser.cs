@@ -1,7 +1,6 @@
-﻿using System;
-
-using CMS.Membership;
+﻿using CMS.Membership;
 using Kentico.Membership;
+using System;
 
 namespace Identity.Models
 {

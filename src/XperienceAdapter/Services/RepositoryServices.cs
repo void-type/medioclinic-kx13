@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Specialized;
-using CMS.Base;
+﻿using CMS.Base;
 using CMS.DocumentEngine.Internal;
 using CMS.Helpers;
 using Kentico.Content.Web.Mvc;
+using System;
+using System.Collections.Specialized;
 using XperienceAdapter.Repositories;
 
 namespace XperienceAdapter.Services
@@ -25,11 +25,11 @@ namespace XperienceAdapter.Services
         public IProgressiveCache ProgressiveCache { get; }
 
         public RepositoryServices(
-            ISiteService siteService, 
+            ISiteService siteService,
             ISiteContextService siteContextService,
             IPageRetriever pageRetriever,
             IPageUrlRetriever pageUrlRetriever,
-            IPageAttachmentUrlRetriever pageAttachmentUrlRetriever, 
+            IPageAttachmentUrlRetriever pageAttachmentUrlRetriever,
             ISiteCultureRepository siteCultureRepository,
             IProgressiveCache progressiveCache)
         {

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-
-using Identity.Models.Profile;
+﻿using CMS.Core;
 using Identity;
-using CMS.Core;
+using Identity.Models.Profile;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System;
+using System.Collections.Generic;
 
 namespace MedioClinic.Areas.Identity.ModelBinders
 {

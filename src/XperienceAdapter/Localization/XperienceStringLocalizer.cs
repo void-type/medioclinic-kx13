@@ -1,10 +1,9 @@
-﻿using System;
+﻿using CMS.Helpers;
+using Microsoft.Extensions.Localization;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Threading;
-using Microsoft.Extensions.Localization;
-
-using CMS.Helpers;
 
 namespace XperienceAdapter.Localization
 {

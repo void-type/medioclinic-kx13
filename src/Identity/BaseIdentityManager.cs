@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.Extensions.Logging;
-
-using Identity.Models;
-using XperienceAdapter.Logging;
+﻿using Identity.Models;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
+using System;
 using XperienceAdapter.Localization;
+using XperienceAdapter.Logging;
 
 namespace Identity
 {

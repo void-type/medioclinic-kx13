@@ -1,23 +1,20 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-
-using CMS.Base;
-using Kentico.Content.Web.Mvc;
-
+﻿using CMS.Base;
 using Core.Configuration;
 using Identity;
 using Identity.Attributes;
 using Identity.Models;
 using Identity.Models.Profile;
+using Kentico.Content.Web.Mvc;
 using MedioClinic.Controllers;
 using MedioClinic.Models;
-
-using PageMetadata = MedioClinic.Models.PageMetadata;
-using XperienceAdapter.Localization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using System;
+using System.Threading.Tasks;
+using XperienceAdapter.Localization;
+using PageMetadata = MedioClinic.Models.PageMetadata;
 
 namespace MedioClinic.Areas.Identity.Controllers
 {
@@ -27,7 +24,7 @@ namespace MedioClinic.Areas.Identity.Controllers
         private readonly IProfileManager _profileManager;
 
         public ProfileController(
-            ILogger<ProfileController> logger, 
+            ILogger<ProfileController> logger,
             IOptionsMonitor<XperienceOptions> optionsMonitor,
             IStringLocalizer<SharedResource> stringLocalizer,
             IPageUrlRetriever pageUrlRetriever,

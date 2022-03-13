@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Kentico.Content.Web.Mvc;
+﻿using Kentico.Content.Web.Mvc;
 using Kentico.Forms.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
-
 using MedioClinic.Components;
 using MedioClinic.Components.FieldValidationRules;
 using MedioClinic.Components.FormComponents;
@@ -16,6 +10,10 @@ using MedioClinic.Components.Sections;
 using MedioClinic.Components.Widgets;
 using MedioClinic.Models;
 using MedioClinic.PageTemplates;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 [assembly: RegisterPageTemplate(
     ComponentIdentifiers.BasicPageTemplate,

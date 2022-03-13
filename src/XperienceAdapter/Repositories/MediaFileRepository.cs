@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-
-using CMS.Base;
+﻿using CMS.Base;
 using CMS.DataEngine;
 using CMS.Helpers;
 using CMS.IO;
 using CMS.MediaLibrary;
 using CMS.Membership;
-
 using Core.Configuration;
-
 using Kentico.Content.Web.Mvc;
-
 using Microsoft.Extensions.Options;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using XperienceAdapter.Models;
 
 namespace XperienceAdapter.Repositories

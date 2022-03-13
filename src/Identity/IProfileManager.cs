@@ -1,8 +1,7 @@
-﻿using System.Threading.Tasks;
-
-using Core;
+﻿using Core;
 using Identity.Models;
 using Identity.Models.Profile;
+using System.Threading.Tasks;
 
 namespace Identity
 {

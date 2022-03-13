@@ -1,12 +1,10 @@
-﻿using System;
+﻿using CMS.DataEngine;
+using Kentico.Forms.Web.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-
-using CMS.DataEngine;
-
-using Kentico.Forms.Web.Mvc;
 
 namespace MedioClinic.Components.FormComponents
 {

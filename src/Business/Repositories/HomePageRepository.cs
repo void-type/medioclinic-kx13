@@ -1,11 +1,10 @@
-﻿using System;
+﻿using Business.Models;
+using System;
 using System.Linq;
 using System.Threading;
-
 using XperienceAdapter.Extensions;
 using XperienceAdapter.Repositories;
 using XperienceAdapter.Services;
-using Business.Models;
 
 namespace Business.Repositories
 {

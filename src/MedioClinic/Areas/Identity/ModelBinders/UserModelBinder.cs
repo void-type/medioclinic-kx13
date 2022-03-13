@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
-using EnumsNET;
-
+﻿using EnumsNET;
 using Identity;
 using Identity.Extensions;
 using Identity.Models;
 using Identity.Models.Profile;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MedioClinic.Areas.Identity.ModelBinders
 {

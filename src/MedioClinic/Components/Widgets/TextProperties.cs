@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Kentico.PageBuilder.Web.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using Kentico.PageBuilder.Web.Mvc;
 
 namespace MedioClinic.Components.Widgets
 {

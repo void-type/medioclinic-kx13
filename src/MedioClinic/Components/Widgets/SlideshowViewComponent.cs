@@ -1,15 +1,11 @@
-﻿using System;
+﻿using Core.Configuration;
+using Kentico.PageBuilder.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using Core.Configuration;
-
-using Kentico.PageBuilder.Web.Mvc;
-
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-
 using XperienceAdapter.Models;
 using XperienceAdapter.Repositories;
 
