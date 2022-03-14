@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.uielement>
+  <ElementCheckModuleReadPermission>True</ElementCheckModuleReadPermission>
+  <ElementDisplayName>Edit appointment</ElementDisplayName>
+  <ElementGUID>e80068d6-e554-4cca-9b50-0a1fb86d8446</ElementGUID>
+  <ElementIconClass />
+  <ElementIsCustom>True</ElementIsCustom>
+  <ElementIsGlobalApplication>False</ElementIsGlobalApplication>
+  <ElementIsMenu>False</ElementIsMenu>
+  <ElementName>EditAppointment</ElementName>
+  <ElementOrder>2</ElementOrder>
+  <ElementPageTemplateID>
+    <CodeName>Editing</CodeName>
+    <GUID>bc86a286-996d-4445-ac8a-68ed45d115b3</GUID>
+    <ObjectType>cms.pagetemplate</ObjectType>
+  </ElementPageTemplateID>
+  <ElementParentID>
+    <CodeName>Appointments</CodeName>
+    <GUID>4ffac8f7-9838-4c69-9eab-7925c3e047ea</GUID>
+    <ObjectType>cms.uielement</ObjectType>
+    <Parent>
+      <CodeName>DoctorAppointments</CodeName>
+      <GUID>5dc8db7e-6b7a-4058-adb3-decf96eea885</GUID>
+      <ObjectType>cms.resource</ObjectType>
+    </Parent>
+  </ElementParentID>
+  <ElementProperties>
+    <Data>
+      <DefaultFieldLayout>twocolumns</DefaultFieldLayout>
+      <DefaultFormLayout>Divs</DefaultFormLayout>
+      <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
+    </Data>
+  </ElementProperties>
+  <ElementRequiresGlobalAdminPriviligeLevel>False</ElementRequiresGlobalAdminPriviligeLevel>
+  <ElementResourceID>
+    <CodeName>DoctorAppointments</CodeName>
+    <GUID>5dc8db7e-6b7a-4058-adb3-decf96eea885</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ElementResourceID>
+  <ElementSize>0</ElementSize>
+  <ElementType>PageTemplate</ElementType>
+</cms.uielement>

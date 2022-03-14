@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.customtable>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>DoctorAppointments</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Doctor specialty list</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="ItemID" columntype="integer" guid="bd7879f3-7dbc-4b70-93f4-1f1c25165553" isPK="true">
+        <properties>
+          <fieldcaption>ItemID</fieldcaption>
+        </properties>
+      </field>
+      <field column="SpecialtyName" columnsize="200" columntype="text" guid="a085b87e-a00f-40f6-90f3-eb320422ff68" visible="true">
+        <properties>
+          <fieldcaption>Name</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field column="SpecialtyDescription" columnsize="1000" columntype="text" guid="1384da4d-eeca-490a-9813-5771963e64f5" visible="true">
+        <properties>
+          <fieldcaption>Description</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="ItemCreatedBy" columntype="integer" guid="03988264-eef2-4037-983a-05eaba97c0e6" system="true">
+        <properties>
+          <fieldcaption>Created by</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="ItemCreatedWhen" columnprecision="7" columntype="datetime" guid="a4e13efd-8b4c-466c-a6b4-f1f91ea8d514" system="true">
+        <properties>
+          <fieldcaption>Created when</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="ItemModifiedBy" columntype="integer" guid="3603fe24-f1c1-429e-8fd7-f8e3c03d19aa" system="true">
+        <properties>
+          <fieldcaption>Modified by</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="ItemModifiedWhen" columnprecision="7" columntype="datetime" guid="4c936344-5196-4ff7-8caf-cdb8d05e2200" system="true">
+        <properties>
+          <fieldcaption>Modified when</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="ItemOrder" columntype="integer" guid="663ecd51-388c-4d21-898f-a39df9a568bb" system="true">
+        <properties>
+          <fieldcaption>Order</fieldcaption>
+        </properties>
+      </field>
+      <field column="ItemGUID" columntype="guid" guid="19a23c6d-01cd-4fc2-b7ac-3ea692aa749b" system="true">
+        <properties>
+          <fieldcaption>GUID</fieldcaption>
+        </properties>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>59ceb470-e683-4f9f-8d6e-47e3d8336114</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>False</ClassHasURL>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>True</ClassIsCustomTable>
+  <ClassIsDocumentType>False</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsMenuItemType>False</ClassIsMenuItemType>
+  <ClassIsNavigationItem>False</ClassIsNavigationItem>
+  <ClassIsProduct>False</ClassIsProduct>
+  <ClassName>DoctorAppointments.DoctorSpecialtyList</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchCreationDateColumn>DocumentCreatedWhen</ClassSearchCreationDateColumn>
+  <ClassSearchEnabled>True</ClassSearchEnabled>
+  <ClassSearchSettings>
+    <search>
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="00054744-90dc-46df-a975-fb27cca0020c" name="ItemModifiedWhen" searchable="True" tokenized="False" updatetrigger="True" />
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="2b0304f9-a1df-4c55-b21c-1b6e1aafb573" name="SpecialtyName" searchable="False" tokenized="True" updatetrigger="True" />
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="3a4830ad-0d8a-4a5f-aedf-9df295b987ee" name="SpecialtyDescription" searchable="False" tokenized="True" updatetrigger="True" />
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="48184dca-b2c7-4bca-90d6-b2d473e6707b" name="ItemOrder" searchable="True" tokenized="False" updatetrigger="True" />
+      <item azurecontent="False" azureretrievable="False" azuresearchable="False" content="False" id="4dd5898b-5b88-43c6-8d34-8c30375ed49a" name="ItemGUID" searchable="False" tokenized="False" updatetrigger="False" />
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="5c6cb378-57ba-402b-925f-6ff20e5012be" name="ItemCreatedWhen" searchable="True" tokenized="False" updatetrigger="True" />
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="a6a28a45-4c76-43f5-87bd-8860d46b1924" name="ItemModifiedBy" searchable="True" tokenized="False" updatetrigger="True" />
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="b57168ed-3c21-4856-876c-4c813d57e796" name="ItemCreatedBy" searchable="True" tokenized="False" updatetrigger="True" />
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="c84a248c-e707-45b2-88d3-efe5cd689484" name="ItemID" searchable="True" tokenized="False" updatetrigger="True" />
+    </search>
+  </ClassSearchSettings>
+  <ClassSearchTitleColumn>DocumentName</ClassSearchTitleColumn>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassShowTemplateSelection>False</ClassShowTemplateSelection>
+  <ClassTableName>DoctorAppointments_DoctorSpecialtyList</ClassTableName>
+  <ClassUsePublishFromTo>False</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.customtable>

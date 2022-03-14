@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customtableitem.doctorappointments.doctorspecialtylist>
+  <ItemCreatedBy>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </ItemCreatedBy>
+  <ItemGUID>344ec0f7-30f0-421b-a612-d3a1663b3812</ItemGUID>
+  <ItemModifiedBy>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </ItemModifiedBy>
+  <ItemOrder>3</ItemOrder>
+  <SpecialtyDescription>Kid stuff</SpecialtyDescription>
+  <SpecialtyName>Pediatrics</SpecialtyName>
+</customtableitem.doctorappointments.doctorspecialtylist>

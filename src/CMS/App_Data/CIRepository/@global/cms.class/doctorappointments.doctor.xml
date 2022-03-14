@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.class>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <CodeNameColumn>DoctorCodeName</CodeNameColumn>
+      <DisplayNameColumn>DoctorLastName</DisplayNameColumn>
+      <GUIDColumn>DoctorGuid</GUIDColumn>
+      <LastModifiedColumn>DoctorLastModified</LastModifiedColumn>
+      <NameSpace>DoctorAppointments</NameSpace>
+      <ObjectType>doctorappointments.doctor</ObjectType>
+      <UseGuidHashtable>False</UseGuidHashtable>
+      <UseIdHashtable>False</UseIdHashtable>
+      <UseNameHashtable>False</UseNameHashtable>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Doctor</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="DoctorID" columntype="integer" guid="4e875554-b79f-4d63-8a5d-a809eaf66aef" isPK="true">
+        <properties>
+          <fieldcaption>DoctorID</fieldcaption>
+        </properties>
+      </field>
+      <field column="DoctorCodeName" columnsize="200" columntype="text" guid="2dd75949-a94b-4d04-ac69-3ba171c85182" system="true" visible="true">
+        <properties>
+          <fieldcaption>Code name</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>CodeName</controlname>
+          <RequireIdentifier>False</RequireIdentifier>
+        </settings>
+      </field>
+      <field column="DoctorFirstName" columnsize="200" columntype="text" guid="35591141-7305-45ef-b7df-54cc3a0e02ef" system="true" visible="true">
+        <properties>
+          <defaultvalue>First name</defaultvalue>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field column="DoctorLastName" columnsize="200" columntype="text" guid="54d09004-cb59-4447-b0b8-2f792f4ce88b" system="true" visible="true">
+        <properties>
+          <defaultvalue>Last name</defaultvalue>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="DoctorSpecialty" columnsize="200" columntype="text" guid="2b2e19a5-9fc4-4761-b1ba-1a2e247f1e09" system="true" visible="true">
+        <properties>
+          <fieldcaption>Specialty</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>DropDownListControl</controlname>
+          <DisplayActualValueAsItem>False</DisplayActualValueAsItem>
+          <EditText>False</EditText>
+          <Query>
+            <![CDATA[SELECT SpecialtyName, SpecialtyName FROM DoctorAppointments_DoctorSpecialtyList]]>
+          </Query>
+          <SortItems>False</SortItems>
+        </settings>
+      </field>
+      <field column="DoctorGuid" columntype="guid" guid="45f08810-3513-4e94-9185-c0ce485ded25" system="true">
+        <properties>
+          <fieldcaption>GUID</fieldcaption>
+        </properties>
+      </field>
+      <field column="DoctorLastModified" columnprecision="7" columntype="datetime" guid="a88eb0bb-50de-4bbb-8c2f-08d246997da2" system="true">
+        <properties>
+          <fieldcaption>Last modified</fieldcaption>
+        </properties>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>148f5f50-ac00-435d-994a-74cc8e86f60f</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>False</ClassHasURL>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>False</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsMenuItemType>False</ClassIsMenuItemType>
+  <ClassIsNavigationItem>False</ClassIsNavigationItem>
+  <ClassIsProduct>False</ClassIsProduct>
+  <ClassName>DoctorAppointments.Doctor</ClassName>
+  <ClassNodeNameSource />
+  <ClassResourceID>
+    <CodeName>DoctorAppointments</CodeName>
+    <GUID>5dc8db7e-6b7a-4058-adb3-decf96eea885</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ClassResourceID>
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassShowTemplateSelection>False</ClassShowTemplateSelection>
+  <ClassTableName>DoctorAppointments_Doctor</ClassTableName>
+  <ClassUsePublishFromTo>False</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.class>

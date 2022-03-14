@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resource>
+  <ResourceDisplayName>Doctor appointments</ResourceDisplayName>
+  <ResourceGUID>5dc8db7e-6b7a-4058-adb3-decf96eea885</ResourceGUID>
+  <ResourceHasFiles>False</ResourceHasFiles>
+  <ResourceIsInDevelopment>True</ResourceIsInDevelopment>
+  <ResourceName>DoctorAppointments</ResourceName>
+  <ShowInDevelopment>False</ShowInDevelopment>
+</cms.resource>

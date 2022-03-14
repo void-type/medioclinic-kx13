@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.class>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <GUIDColumn>AppointmentGuid</GUIDColumn>
+      <LastModifiedColumn>AppointmentLastModified</LastModifiedColumn>
+      <NameSpace>DoctorAppointments</NameSpace>
+      <ObjectType>doctorappointments.appointment</ObjectType>
+      <UseGuidHashtable>False</UseGuidHashtable>
+      <UseIdHashtable>False</UseIdHashtable>
+      <UseNameHashtable>False</UseNameHashtable>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassConnectionString>CMSConnectionString</ClassConnectionString>
+  <ClassDisplayName>Appointment</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="AppointmentID" columntype="integer" guid="e6e65362-4cac-4c24-be70-1568623c7422" isPK="true">
+        <properties>
+          <fieldcaption>AppointmentID</fieldcaption>
+        </properties>
+      </field>
+      <field column="AppointmentPatientFirstName" columnsize="200" columntype="text" guid="0caaab70-960d-4456-b643-80768509ab01" system="true" visible="true">
+        <properties>
+          <fieldcaption>Patient first name</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field column="AppointmentPatientLastName" columnsize="200" columntype="text" guid="5c16861f-0fe0-4520-8176-801255e9494d" system="true" visible="true">
+        <properties>
+          <fieldcaption>Patient last name</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field column="AppointmentPatientEmail" columnsize="200" columntype="text" guid="bbf0f248-934a-4d21-800b-a702f1c7f1ed" system="true" visible="true">
+        <properties>
+          <fieldcaption>Patient email</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="AppointmentPatientPhoneNumber" columnsize="200" columntype="text" guid="47851122-32bd-484c-ab3d-a249e93810ce" system="true" visible="true">
+        <properties>
+          <fieldcaption>Patient phone number</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field column="AppointmentDate" columnprecision="7" columntype="datetime" guid="a5d0d5a5-8a0f-4ebb-90e2-1a4fdb8b5a8d" system="true" visible="true">
+        <properties>
+          <fieldcaption>Appointment date</fieldcaption>
+        </properties>
+        <settings>
+          <CheckRange>True</CheckRange>
+          <controlname>CalendarControl</controlname>
+          <DisplayNow>True</DisplayNow>
+          <EditTime>True</EditTime>
+          <TimeZoneType>inherit</TimeZoneType>
+        </settings>
+      </field>
+      <field column="AppointmentDoctorID" columntype="integer" guid="97d0a0ee-1c42-4d0d-981f-986021ab591d" refobjtype="doctorappointments.doctor" reftype="Required" system="true" visible="true">
+        <properties>
+          <fieldcaption>Doctor</fieldcaption>
+        </properties>
+        <settings>
+          <AddGlobalObjectNamePrefix>False</AddGlobalObjectNamePrefix>
+          <AddGlobalObjectSuffix>False</AddGlobalObjectSuffix>
+          <AllowAll>False</AllowAll>
+          <AllowDefault>False</AllowDefault>
+          <AllowEditTextBox>False</AllowEditTextBox>
+          <AllowEmpty>False</AllowEmpty>
+          <controlname>Uni_selector</controlname>
+          <DialogWindowName>SelectionDialog</DialogWindowName>
+          <DisplayNameFormat>{%DoctorFirstName %}  {%DoctorLastName%}</DisplayNameFormat>
+          <EditDialogWindowHeight>700</EditDialogWindowHeight>
+          <EditDialogWindowOpenInFullscreen>False</EditDialogWindowOpenInFullscreen>
+          <EditDialogWindowWidth>1000</EditDialogWindowWidth>
+          <EditWindowName>EditWindow</EditWindowName>
+          <EncodeOutput>True</EncodeOutput>
+          <GlobalObjectSuffix ismacro="true">{$general.global$}</GlobalObjectSuffix>
+          <ItemsPerPage>25</ItemsPerPage>
+          <LocalizeItems>True</LocalizeItems>
+          <MaxDisplayedItems>25</MaxDisplayedItems>
+          <MaxDisplayedTotalItems>50</MaxDisplayedTotalItems>
+          <ObjectType>DoctorAppointments.Doctor</ObjectType>
+          <RemoveMultipleCommas>False</RemoveMultipleCommas>
+          <ReturnColumnName>DoctorID</ReturnColumnName>
+          <ReturnColumnType>id</ReturnColumnType>
+          <SelectionMode>0</SelectionMode>
+          <UseDefaultNameFilter>True</UseDefaultNameFilter>
+          <ValuesSeparator>;</ValuesSeparator>
+        </settings>
+      </field>
+      <field column="AppointmentPatientBirthDate" columnprecision="7" columntype="datetime" guid="f294155a-259a-4722-9b69-8a6e818cd413" system="true" visible="true">
+        <settings>
+          <CheckRange>True</CheckRange>
+          <controlname>CalendarControl</controlname>
+          <DisplayNow>True</DisplayNow>
+          <EditTime>True</EditTime>
+          <TimeZoneType>inherit</TimeZoneType>
+        </settings>
+      </field>
+      <field column="AppointmentGuid" columntype="guid" guid="4b6b221b-cf76-4c17-9603-1318e94bb35f" system="true">
+        <properties>
+          <fieldcaption>GUID</fieldcaption>
+        </properties>
+      </field>
+      <field column="AppointmentLastModified" columnprecision="7" columntype="datetime" guid="d77bb36c-055f-422f-ac6c-ed087ca650c4" system="true">
+        <properties>
+          <fieldcaption>Last modified</fieldcaption>
+        </properties>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>34eeed93-493d-408d-b495-cbf0cbac9fad</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>False</ClassHasURL>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>False</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsMenuItemType>False</ClassIsMenuItemType>
+  <ClassIsNavigationItem>False</ClassIsNavigationItem>
+  <ClassIsProduct>False</ClassIsProduct>
+  <ClassName>DoctorAppointments.Appointment</ClassName>
+  <ClassNodeNameSource />
+  <ClassResourceID>
+    <CodeName>DoctorAppointments</CodeName>
+    <GUID>5dc8db7e-6b7a-4058-adb3-decf96eea885</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ClassResourceID>
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassShowTemplateSelection>False</ClassShowTemplateSelection>
+  <ClassTableName>DoctorAppointments_Appointment</ClassTableName>
+  <ClassUsePublishFromTo>False</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.class>

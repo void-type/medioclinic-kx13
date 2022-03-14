@@ -872,6 +872,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\CMSModules\DoctorAppointments\UI\Grids\DoctorAppointments_Appointment\default.xml" />
+    <Content Include="App_Data\CMSModules\DoctorAppointments\UI\Grids\DoctorAppointments_Doctor\default.xml" />
     <Content Include="CMSScripts\WebComponents\kentico-abtest-variant-listing_35.entry.js" />
     <Content Include="CMSScripts\WebComponents\kentico-abtest-variant-listing_35.system.entry.js" />
     <Content Include="CMSScripts\WebComponents\kentico-abtest-variant-listing_41.entry.js" />
@@ -14318,6 +14320,12 @@
     <Compile Include="Old_App_Code\CMSModules\Cultures\CultureEditExtender.cs" />
     <Compile Include="Old_App_Code\CMSModules\Cultures\CultureListExtender.cs" />
     <Compile Include="Old_App_Code\CMSModules\Cultures\CultureSitesExtender.cs" />
+    <Compile Include="Old_App_Code\CMSModules\DoctorAppointments\AppointmentInfo.cs" />
+    <Compile Include="Old_App_Code\CMSModules\DoctorAppointments\AppointmentInfoProvider.cs" />
+    <Compile Include="Old_App_Code\CMSModules\DoctorAppointments\DoctorInfo.cs" />
+    <Compile Include="Old_App_Code\CMSModules\DoctorAppointments\DoctorInfoProvider.cs" />
+    <Compile Include="Old_App_Code\CMSModules\DoctorAppointments\IAppointmentInfoProvider.cs" />
+    <Compile Include="Old_App_Code\CMSModules\DoctorAppointments\IDoctorInfoProvider.cs" />
     <Compile Include="Old_App_Code\CMSModules\EmailEngine\LiveTileModelProviders\EmailsLiveTileModelProvider.cs" />
     <Compile Include="Old_App_Code\CMSModules\EmailTemplates\EmailTemplateEditExtender.cs" />
     <Compile Include="Old_App_Code\CMSModules\EmailTemplates\EmailTemplateListExtender.cs" />
@@ -14346,6 +14354,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CMSScripts\Custom\" />
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />
@@ -14356,10 +14365,7 @@
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CMSScripts\Custom\" />
-    <Folder Include="CMSScripts\WebComponents\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
   </ItemGroup>
   <PropertyGroup>
