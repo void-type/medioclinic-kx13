@@ -13,7 +13,7 @@
         <settings>
           <Options>
 <![CDATA[
-{%SiteContext.CurrentSiteID|(identity)GlobalAdministrator|(hash)0fc5ff476732f29df9520a4b0135b2b3025be805532bab534570066ef82513a6%};{$com.onthissiteonly$}
+{%SiteContext.CurrentSiteID|(identity)GlobalAdministrator|(hash)1b9ed2171f755894e457c1d0132d0f3a8081018d1fb11d501f7814b393f8e10a%};{$com.onthissiteonly$}
 ;{$com.globally$}
 ]]>
           </Options>
@@ -23,14 +23,14 @@
         </settings>
         <properties>
           <visiblemacro>
-            <![CDATA[{%Settings.CMSStoreAllowGlobalManufacturers && CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","EcommerceGlobalModify") && (CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ModifyManufacturers") || CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","EcommerceModify"))|(identity)GlobalAdministrator|(hash)03f52c4dee052d0a0f2f9f9f52fc0450f1a4b1009752cfe6c624cdc55767a803%}]]>
+            <![CDATA[{%Settings.CMSStoreAllowGlobalManufacturers && CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","EcommerceGlobalModify") && (CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ModifyManufacturers") || CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","EcommerceModify"))|(identity)GlobalAdministrator|(hash)439d1e9d0d660ea9623de864c9e7f7b57a1370368152e00414dd4fa738b1d356%}]]>
           </visiblemacro>
           <defaultvalue ismacro="true">
 <![CDATA[
 {% if (!Settings.CMSStoreAllowGlobalManufacturers
     || !CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","EcommerceGlobalModify")
     || CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ModifyManufacturers")
-    || CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","EcommerceModify")) {SiteContext.CurrentSiteID} |(identity)GlobalAdministrator|(hash)95cbe77d7cfbb99361d2da5b457347c51c7f21a40f6cafe5c3f0ac74ea2baef7%}
+    || CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","EcommerceModify")) {SiteContext.CurrentSiteID} |(identity)GlobalAdministrator|(hash)ade6363e67ede13ce7339b27e7e919b7195f3ec5b03ecca55ae7616a49890524%}
 ]]>
           </defaultvalue>
           <fieldcaption>{$com.available$}</fieldcaption>

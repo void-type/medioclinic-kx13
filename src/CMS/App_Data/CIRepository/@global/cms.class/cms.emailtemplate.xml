@@ -18,7 +18,7 @@
       <field column="EmailTemplateDisplayName" columnsize="200" columntype="text" guid="4c80ea4a-4e2f-4f4e-b524-9ec6acb2290b" system="true" translatefield="true" visible="true">
         <properties>
           <enabledmacro ismacro="true">
-            <![CDATA[{%QueryString["editonlycode"] != "1" || FormMode == FormModeEnum.Insert|(identity)GlobalAdministrator|(hash)efa05699db433f050a8d0d4b0584633ad5a84cb2a5bd68cb89b3ad940b321f8a%}]]>
+            <![CDATA[{%QueryString["editonlycode"] != "1" || FormMode == FormModeEnum.Insert|(identity)GlobalAdministrator|(hash)0b989aef62c69a2497072d0afdc9a076da120c29f87d028f04c03112342886bb%}]]>
           </enabledmacro>
           <fieldcaption>{$general.displayname$}</fieldcaption>
           <validationerrormessage>{$EmailTemplate_Edit.FillDisplayNameField$}</validationerrormessage>
@@ -35,7 +35,7 @@
       <field column="EmailTemplateName" columnsize="200" columntype="text" guid="db77f0cf-12cf-43e6-be0a-28c1c97fb026" spellcheck="false" system="true" visible="true">
         <properties>
           <enabledmacro ismacro="true">
-            <![CDATA[{%QueryString["editonlycode"] != "1" || FormMode == FormModeEnum.Insert|(identity)GlobalAdministrator|(hash)efa05699db433f050a8d0d4b0584633ad5a84cb2a5bd68cb89b3ad940b321f8a%}]]>
+            <![CDATA[{%QueryString["editonlycode"] != "1" || FormMode == FormModeEnum.Insert|(identity)GlobalAdministrator|(hash)0b989aef62c69a2497072d0afdc9a076da120c29f87d028f04c03112342886bb%}]]>
           </enabledmacro>
           <fieldcaption>{$general.codename$}</fieldcaption>
           <validationerrormessage>{$EmailTemplate_Edit.FillCodeNameField$}</validationerrormessage>
@@ -57,7 +57,7 @@
         <properties>
           <defaultvalue ismacro="true">{?templatetype?}</defaultvalue>
           <enabledmacro ismacro="true">
-            <![CDATA[{%QueryString["editonlycode"] != "1"|(identity)GlobalAdministrator|(hash)ddd0c1976b47af3876719d5ef8bcdc9abb16a033aec0af779439e55ae14cca8f%}]]>
+            <![CDATA[{%QueryString["editonlycode"] != "1"|(identity)GlobalAdministrator|(hash)f416aae7200b71e2fc44c4b74e5898108ba6e6d4488d429f752c86c8150b9e52%}]]>
           </enabledmacro>
           <fieldcaption>{$emailtemplate_edit.emailtype$}</fieldcaption>
         </properties>

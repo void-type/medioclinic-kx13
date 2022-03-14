@@ -20,7 +20,7 @@
           <EditText>False</EditText>
           <Options>
 <![CDATA[
-{%SiteContext.CurrentSiteID|(identity)GlobalAdministrator|(hash)0fc5ff476732f29df9520a4b0135b2b3025be805532bab534570066ef82513a6%};{$com.onthissiteonly$}
+{%SiteContext.CurrentSiteID|(identity)GlobalAdministrator|(hash)1b9ed2171f755894e457c1d0132d0f3a8081018d1fb11d501f7814b393f8e10a%};{$com.onthissiteonly$}
 ;{$com.globally$}
 ]]>
           </Options>
@@ -36,12 +36,12 @@
 <![CDATA[
 {% if ((QueryString["siteId"] != -4) && (!Settings.CMSStoreAllowGlobalDepartments
     || !CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ConfigurationGlobalModify")
-    || CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ConfigurationModify"))) {SiteContext.CurrentSiteID} |(identity)GlobalAdministrator|(hash)c28dbe244ef7d73ffad74689305b004a0af5276894cd4fee499cb9270de88790%}
+    || CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ConfigurationModify"))) {SiteContext.CurrentSiteID} |(identity)GlobalAdministrator|(hash)33d262e29b9e2c368b8db9211ac5ce0f76936a8454137cd8f9b0024843169331%}
 ]]>
           </defaultvalue>
           <fieldcaption>{$com.available$}</fieldcaption>
           <visiblemacro ismacro="true">
-            <![CDATA[{%QueryString["siteId"] != -4 && Settings.CMSStoreAllowGlobalPaymentMethods && CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ConfigurationGlobalModify") && CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ConfigurationModify")|(identity)GlobalAdministrator|(hash)11c49b528be1c605b55810335f7695ca7e78f78dd048eaad8be11dbb25483713%}]]>
+            <![CDATA[{%QueryString["siteId"] != -4 && Settings.CMSStoreAllowGlobalPaymentMethods && CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ConfigurationGlobalModify") && CurrentUser.IsAuthorizedPerResource("CMS.Ecommerce","ConfigurationModify")|(identity)GlobalAdministrator|(hash)30b2a616bd79a38c0fbf28cddcb971704e8eccf12ea0d000a20490b2f2f91a1a%}]]>
           </visiblemacro>
         </properties>
       </field>

@@ -8,7 +8,7 @@
 You have bought the following e-products, please download them until their download links expire. Once the download link expires, you won't be able to download the file.
 <br />
 
-{%EproductsTable.ApplyTransformation("Ecommerce.Transformations.Order_EproductsTable")|(identity)GlobalAdministrator|(hash)df0c8c54eab3a6f64f6b2141287dcbfcd22ece86ed0835c0b341095627eb4ab7%}
+{%EproductsTable.ApplyTransformation("Ecommerce.Transformations.Order_EproductsTable")|(identity)GlobalAdministrator|(hash)a9f0f65e53febb57aed05b9fe41fa5659841a42bf97962ee3d09016319735d87%}
 <br />
 
 This is an automatic reminder, please do not respond.

@@ -27,7 +27,7 @@
       <bindingobjecttype>cms.Role</bindingobjecttype>
       <checkmodifypermission>True</checkmodifypermission>
       <objectid>
-        <![CDATA[{%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fc4b2afded03714a09a57f22150034ad1c58e82544f60593480cdb1031024e7b%}]]>
+        <![CDATA[{%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fe7dffc39f7ab38c38349b105ab84e73429f680caaaa0efadbfb28ebe855bc12%}]]>
       </objectid>
       <objecttype>cms.user</objecttype>
       <bindingobjectprovidertype>cms.UserRole</bindingobjectprovidertype>
@@ -36,11 +36,11 @@
 <![CDATA[
 Obj: {%EditedObject%}<br>
 Parent: {%EditedObjectParent%}<br>
-UserID: {%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fc4b2afded03714a09a57f22150034ad1c58e82544f60593480cdb1031024e7b%}<br>
+UserID: {%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fe7dffc39f7ab38c38349b105ab84e73429f680caaaa0efadbfb28ebe855bc12%}<br>
 ]]>
       </listprefacetext>
       <wherecondition>
-        <![CDATA[UserID={%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fc4b2afded03714a09a57f22150034ad1c58e82544f60593480cdb1031024e7b%}]]>
+        <![CDATA[UserID={%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fe7dffc39f7ab38c38349b105ab84e73429f680caaaa0efadbfb28ebe855bc12%}]]>
       </wherecondition>
       <category_name_custom>False</category_name_custom>
       <includejquery>False</includejquery>
@@ -54,10 +54,10 @@ UserID: {%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)
   </ElementResourceID>
   <ElementSize>0</ElementSize>
   <ElementTargetURL>
-    <![CDATA[~/CMSModules/Membership/Pages/Users/User_Edit_Roles.aspx?userId={%EditedObject.CustomerUserID|(identity)GlobalAdministrator|(hash)33754e80dba276c33b44320cc1c22d0a471e6ac5371eaf1469cc2268d976375e%}]]>
+    <![CDATA[~/CMSModules/Membership/Pages/Users/User_Edit_Roles.aspx?userId={%EditedObject.CustomerUserID|(identity)GlobalAdministrator|(hash)2aef91a41cdb3151b6a99ae8c89a4700b306a0db8e3a74c3b1e60839608dc261%}]]>
   </ElementTargetURL>
   <ElementType>Url</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%(CurrentUser.IsAuthorizedPerResource("CMS.Users","Read")) && EditedObject.CustomerIsRegistered|(identity)GlobalAdministrator|(hash)757720937a974f733807f4bb0786bb7bb8409f1b2072058c26b6f8448f754859%}]]>
+    <![CDATA[{%(CurrentUser.IsAuthorizedPerResource("CMS.Users","Read")) && EditedObject.CustomerIsRegistered|(identity)GlobalAdministrator|(hash)17f4ca65b3c48f530c6c7b024a597e8c8f889a633b4a8afb9c34a32e061021a8%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

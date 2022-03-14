@@ -23,7 +23,7 @@
         </settings>
         <properties>
           <defaultvalue ismacro="true">
-            <![CDATA[{% (Settings.CMSStoreUseGlobalTaxClasses || (QueryString["siteid"] == "-4")) ? "" : SiteContext.CurrentSiteID |(identity)GlobalAdministrator|(hash)e244e27b83d6a70af18c3c102014511e928459cc5c6b33fe8988ae2869552d6d%}]]>
+            <![CDATA[{% (Settings.CMSStoreUseGlobalTaxClasses || (QueryString["siteid"] == "-4")) ? "" : SiteContext.CurrentSiteID |(identity)GlobalAdministrator|(hash)206aef33df0af87e8bbd86829c709e29c730d0c024ccaa173f5a65de54156215%}]]>
           </defaultvalue>
           <visiblemacro ismacro="true">{%false%}</visiblemacro>
         </properties>

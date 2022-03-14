@@ -34,7 +34,7 @@
       <displaybreadcrumbs>False</displaybreadcrumbs>
       <extenderclassname>QueriesGridExtender</extenderclassname>
       <wherecondition>
-        <![CDATA[ClassID = {% EditedObjectParent.ID |(identity)GlobalAdministrator|(hash)5d63efb362bdb3eae58c231d3fc7d190787bd951fff15504c1e03f04146d8e80%}]]>
+        <![CDATA[ClassID = {% EditedObjectParent.ID |(identity)GlobalAdministrator|(hash)514d6a52b71c8990a4d3988d9a485078d4ed0c74161b28839e1cc94ba6db30b6%}]]>
       </wherecondition>
       <editindialog>False</editindialog>
     </data>

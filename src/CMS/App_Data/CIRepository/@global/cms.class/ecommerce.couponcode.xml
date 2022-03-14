@@ -36,7 +36,7 @@
       <field allowempty="true" column="CouponCodeUseLimit" columntype="integer" guid="c8733a1b-6cbd-4999-a985-d2d83923dd92" system="true" visible="true">
         <properties>
           <contentafter>
-            <![CDATA[<span class="form-control-text">{% GetResourceString("com.couponcode.times") |(identity)GlobalAdministrator|(hash)6a9ebc6f21e42666519b44d5b7671a01b5d5adce56f087495169f81adf8e1039%}</span> ]]>
+            <![CDATA[<span class="form-control-text">{% GetResourceString("com.couponcode.times") |(identity)GlobalAdministrator|(hash)3c70616ccca7d49c422d7becd25ccb5f4bb74460b94c5ef88f0826b8bbd1ea93%}</span> ]]>
           </contentafter>
           <fieldcaption>{$com.couponcode.uselimit$}</fieldcaption>
           <fielddescription>{$com.couponcode.uselimitdesc$}</fielddescription>
@@ -58,7 +58,7 @@
             <![CDATA[{%Rule("Value <= 999999", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"MaxValue\" ><p n=\"maxvalue\"><t>999999</t><v>999999</v><r>false</r><d></d><vt>double</vt></p></r></rules>")%}]]>
           </rule>
           <rule>
-            <![CDATA[{%Rule("((Convert.ToInt(CouponCodeUseCount.Value) == 0)? Value >= 1: Value >= Convert.ToInt(CouponCodeUseCount.Value))", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"GeneralCondition\" ><p n=\"condition\"><t>(Convert.ToInt(CouponCodeUseCount.Value) == 0)? Value &gt;= 1: Value &gt;= Convert.ToInt(CouponCodeUseCount.Value)</t><v>(Convert.ToInt(CouponCodeUseCount.Value) == 0)? Value &gt;= 1: Value &gt;= Convert.ToInt(CouponCodeUseCount.Value)</v><r>0</r><d></d><vt>longtext</vt><tv>0</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)744db062a9f68c5f466a32eeed826fd7baecb81615011bf107125f39476dbf03%}]]>
+            <![CDATA[{%Rule("((Convert.ToInt(CouponCodeUseCount.Value) == 0)? Value >= 1: Value >= Convert.ToInt(CouponCodeUseCount.Value))", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"GeneralCondition\" ><p n=\"condition\"><t>(Convert.ToInt(CouponCodeUseCount.Value) == 0)? Value &gt;= 1: Value &gt;= Convert.ToInt(CouponCodeUseCount.Value)</t><v>(Convert.ToInt(CouponCodeUseCount.Value) == 0)? Value &gt;= 1: Value &gt;= Convert.ToInt(CouponCodeUseCount.Value)</v><r>0</r><d></d><vt>longtext</vt><tv>0</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)32c7a81e238745bb75940d56fa4f375d49a47f2ab7e40f6710a37d58d7e7cdd5%}]]>
           </rule>
         </rules>
       </field>

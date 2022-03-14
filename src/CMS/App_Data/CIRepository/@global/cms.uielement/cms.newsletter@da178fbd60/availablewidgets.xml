@@ -31,7 +31,7 @@
     <Data>
       <BindingObjectType>newsletter.emailwidgettemplate</BindingObjectType>
       <DialogWhereCondition>
-        <![CDATA[EmailWidgetSiteID = {% SiteContext.CurrentSiteID |(identity)GlobalAdministrator|(hash)4c87ec20da5d5500e604b06d4130c645fd7e8066c52863f4ef486c2f60f05d7c%}]]>
+        <![CDATA[EmailWidgetSiteID = {% SiteContext.CurrentSiteID |(identity)GlobalAdministrator|(hash)c0452a629169cbb6f27df7b46a4b0a29b9a6df23f1d32136cf18e4db44ca680f%}]]>
       </DialogWhereCondition>
       <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
       <ListPrefaceText>{$newsletter.emailwidgetsbinding$}</ListPrefaceText>
@@ -48,6 +48,6 @@
   <ElementSize>0</ElementSize>
   <ElementType>PageTemplate</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%EditedObject.TemplateType = "I"|(identity)GlobalAdministrator|(hash)f09d77f802a07a8e0d667d591caf8381784680115ea642ff6c5b9f943b82db83%}]]>
+    <![CDATA[{%EditedObject.TemplateType = "I"|(identity)GlobalAdministrator|(hash)5d35808e2e7b0a3e77709bc546c2e5efba2a52c36ad54392f4e0ab5479004eac%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

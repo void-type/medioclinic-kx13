@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.uielement>
   <ElementAccessCondition>
-    <![CDATA[{%Rule("(CurrentUser.IsAuthorizedPerResource(\"CMS.Ecommerce\",\"ReadReports\")) || (CurrentUser.IsAuthorizedPerResource(\"CMS.Ecommerce\",\"EcommerceRead\"))", "<rules><r pos=\"0\" par=\"\" op=\"or\" n=\"Permission\" ><p n=\"permission\"><t>ReadReports</t><v>ReadReports</v><r>0</r><d>select permission</d><vt>text</vt><tv>1</tv></p><p n=\"module\"><t>CMS.Ecommerce</t><v>CMS.Ecommerce</v><r>0</r><d>select permission</d><vt>text</vt><tv>1</tv></p></r><r pos=\"1\" par=\"\" op=\"or\" n=\"Permission\" ><p n=\"module\"><t>CMS.Ecommerce</t><v>CMS.Ecommerce</v><r>0</r><d>select module</d><vt>text</vt><tv>1</tv></p><p n=\"permission\"><t>EcommerceRead</t><v>EcommerceRead</v><r>0</r><d>select permission</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)9cf7f6bd05bbd7007fa730bb02352eb61f63d7648410f18692a5cdfbb9791ecb%}]]>
+    <![CDATA[{%Rule("(CurrentUser.IsAuthorizedPerResource(\"CMS.Ecommerce\",\"ReadReports\")) || (CurrentUser.IsAuthorizedPerResource(\"CMS.Ecommerce\",\"EcommerceRead\"))", "<rules><r pos=\"0\" par=\"\" op=\"or\" n=\"Permission\" ><p n=\"permission\"><t>ReadReports</t><v>ReadReports</v><r>0</r><d>select permission</d><vt>text</vt><tv>1</tv></p><p n=\"module\"><t>CMS.Ecommerce</t><v>CMS.Ecommerce</v><r>0</r><d>select permission</d><vt>text</vt><tv>1</tv></p></r><r pos=\"1\" par=\"\" op=\"or\" n=\"Permission\" ><p n=\"module\"><t>CMS.Ecommerce</t><v>CMS.Ecommerce</v><r>0</r><d>select module</d><vt>text</vt><tv>1</tv></p><p n=\"permission\"><t>EcommerceRead</t><v>EcommerceRead</v><r>0</r><d>select permission</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)1e2b211c94d86ed5c4707ff72b99adaca00d44996fc7514355382c6c5d21f6c3%}]]>
   </ElementAccessCondition>
   <ElementCaption>{$com.ui.StoreReports$}</ElementCaption>
   <ElementCheckModuleReadPermission>False</ElementCheckModuleReadPermission>
@@ -53,6 +53,6 @@
   <ElementSize>0</ElementSize>
   <ElementType>PageTemplate</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%System.IsModuleLoaded("CMS.Reporting")|(identity)GlobalAdministrator|(hash)a42bfe7b718e1cd9f3471b0bbcc17ebeb1a3f7018a9afbd6f199b0d907178a9b%}]]>
+    <![CDATA[{%System.IsModuleLoaded("CMS.Reporting")|(identity)GlobalAdministrator|(hash)52866fde09bf68a12d6ea765b3be0cd106a931c909d6a3b3e3457b4d459064c8%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

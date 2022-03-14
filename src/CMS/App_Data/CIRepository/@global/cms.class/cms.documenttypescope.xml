@@ -85,7 +85,7 @@
           <controlname>selectsinglepath</controlname>
           <SinglePathMode>True</SinglePathMode>
           <SiteID>
-            <![CDATA[{% Form.ObjectSiteID|(identity)GlobalAdministrator|(hash)3ae05cf9fbba9dc0644809f52db20f20a26b515c9d4a387794114d6a4cf5a89b%}]]>
+            <![CDATA[{% Form.ObjectSiteID|(identity)GlobalAdministrator|(hash)d1834ac8aa05ed9282c542bceab3bf54e50bb050f9f1126f07ee93186be645fa%}]]>
           </SiteID>
         </settings>
       </field>
@@ -101,7 +101,7 @@
           <controlname>selectsinglepath</controlname>
           <SinglePathMode>True</SinglePathMode>
           <SiteID>
-            <![CDATA[{% Form.ObjectSiteID|(identity)GlobalAdministrator|(hash)3ae05cf9fbba9dc0644809f52db20f20a26b515c9d4a387794114d6a4cf5a89b%}]]>
+            <![CDATA[{% Form.ObjectSiteID|(identity)GlobalAdministrator|(hash)d1834ac8aa05ed9282c542bceab3bf54e50bb050f9f1126f07ee93186be645fa%}]]>
           </SiteID>
         </settings>
       </field>
@@ -117,14 +117,14 @@
           <controlname>selectsinglepath</controlname>
           <SinglePathMode>True</SinglePathMode>
           <SiteID>
-            <![CDATA[{% Form.ObjectSiteID|(identity)GlobalAdministrator|(hash)3ae05cf9fbba9dc0644809f52db20f20a26b515c9d4a387794114d6a4cf5a89b%}]]>
+            <![CDATA[{% Form.ObjectSiteID|(identity)GlobalAdministrator|(hash)d1834ac8aa05ed9282c542bceab3bf54e50bb050f9f1126f07ee93186be645fa%}]]>
           </SiteID>
         </settings>
       </field>
       <field allowempty="true" column="ScopeClasses" columntype="longtext" dummy="mainform" guid="bf936219-a861-4ddd-ae62-438599d6a120" system="true" visible="true">
         <properties>
           <enabledmacro ismacro="true">
-            <![CDATA[{%!ScopeAllowAllTypes.Value|(identity)GlobalAdministrator|(hash)f153edc51a6c573868b86498c24a947eaf96d9a5956988255d0872ad6d9352e1%}]]>
+            <![CDATA[{%!ScopeAllowAllTypes.Value|(identity)GlobalAdministrator|(hash)d8ce5e90d4e0e4ac52649db994f3f29d714506acaa16361bdec5f8d1e2a89a19%}]]>
           </enabledmacro>
           <fieldcaption>{$development.doctypes$}</fieldcaption>
         </properties>

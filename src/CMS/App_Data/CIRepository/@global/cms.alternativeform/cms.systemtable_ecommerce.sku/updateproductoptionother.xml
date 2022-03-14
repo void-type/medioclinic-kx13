@@ -128,7 +128,7 @@ ByProduct;{$general.yes$}
       <field column="SKUSellOnlyAvailable">
         <properties>
           <visiblemacro ismacro="true">
-            <![CDATA[{%SKUTrackInventory.Value == "ByProduct"|(identity)GlobalAdministrator|(hash)92267872dceaf46f89a32d0758084b92628ed52a16f73b5a8529fbf51625df55%}]]>
+            <![CDATA[{%SKUTrackInventory.Value == "ByProduct"|(identity)GlobalAdministrator|(hash)2f15744b9d2b188f384c550d37e59c69101712e88733b7e60eaacf14d3c54b19%}]]>
           </visiblemacro>
         </properties>
       </field>

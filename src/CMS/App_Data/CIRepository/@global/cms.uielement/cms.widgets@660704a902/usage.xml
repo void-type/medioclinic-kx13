@@ -29,10 +29,10 @@
     <data>
       <allowdataexport>true</allowdataexport>
       <text ismacro="True">
-        <![CDATA[{%GetResourceString("widget.usage.title")|(identity)GlobalAdministrator|(hash)954b635df29fe31070056d069956e4db9dc1dac8fa8ecdc6d69b4660a3d5bfef%}]]>
+        <![CDATA[{%GetResourceString("widget.usage.title")|(identity)GlobalAdministrator|(hash)38a06930fecf05573162d9885b165b021abb941cb5c6bb9367798f22013f2430%}]]>
       </text>
       <zerorowstext ismacro="True">
-        <![CDATA[{%GetResourceString("widget.usage.nodatafound")|(identity)GlobalAdministrator|(hash)b3258eaceac604cdfc46faf12c3ebf943106f08bf01a492313e9f60d7ca5f3db%}]]>
+        <![CDATA[{%GetResourceString("widget.usage.nodatafound")|(identity)GlobalAdministrator|(hash)980b10533591437d87eb3f27b908c8dd2568f0a4c281d6f620526a5d0edf712d%}]]>
       </zerorowstext>
       <openindialog>False</openindialog>
       <displaybreadcrumbs>False</displaybreadcrumbs>

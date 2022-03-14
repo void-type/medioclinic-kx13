@@ -26,7 +26,7 @@
   <ElementProperties>
     <Data>
       <breadcrumbsSuffix>
-        <![CDATA[{% EditedObject.GetNiceName() |(identity)GlobalAdministrator|(hash)883e5992ca7c0ac13e7d51e24a250aa00d3e48433fa8b841fa6ef77574785442%}]]>
+        <![CDATA[{% EditedObject.GetNiceName() |(identity)GlobalAdministrator|(hash)8e79b18fc4b9d3e8d44e5d59725703652e3b95c7e8dddb4c4ed47fdef9b74369%}]]>
       </breadcrumbsSuffix>
       <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
       <ObjectType>newsletter.issue</ObjectType>

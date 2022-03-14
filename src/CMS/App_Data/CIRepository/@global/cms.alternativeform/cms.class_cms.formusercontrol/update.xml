@@ -101,7 +101,7 @@
         <properties>
           <fieldcaption>{$general.module$}</fieldcaption>
           <visiblemacro ismacro="true">
-            <![CDATA[{%SystemContext.DevelopmentMode|(identity)GlobalAdministrator|(hash)d6e080de4467c38e6e77d302d4bdee7d1a077dbee0b7f19f361b27994a7bce8e%}]]>
+            <![CDATA[{%SystemContext.DevelopmentMode|(identity)GlobalAdministrator|(hash)b849ab5926526afd424193911355f1bb61248c82d32f5abc3b5344fa23060a2e%}]]>
           </visiblemacro>
         </properties>
       </field>
@@ -126,7 +126,7 @@
   
 }
 return GetResourceString("developmentformcontrolcreation");
-|(identity)GlobalAdministrator|(hash)9bae8543db478b167b20283169fe4b6920e81be4bcccf13598fa051390e3eed4%}
+|(identity)GlobalAdministrator|(hash)0c5fc43d87c441c03dda8d32d18757a4953387109dff3e0bb62d6ad8338bfc94%}
 ]]>
           </caption>
           <visible>True</visible>
@@ -143,7 +143,7 @@ return 2;
 }
 
 return; 0;
-|(identity)GlobalAdministrator|(hash)1bdbbbd0c4c34c7c09b33953f3e10158981ea04611a67144667fd41979a7ba72%}
+|(identity)GlobalAdministrator|(hash)588bff8322e606ec51637b546af639cefbb24ccd97aeb6fa13dc9d931d23797d%}
 ]]>
           </defaultvalue>
           <visiblemacro ismacro="true">
@@ -193,7 +193,7 @@ if (UserControlParentID > 0)
 }
 
  return "CMS.FormEngine.Web.UI.FormEngineUserControl, CMS.FormEngine.Web.UI";
-|(identity)GlobalAdministrator|(hash)b6ad198b82ec3b985fc8a0d783b44c82576cc386aa4cd9f4ff6479b623ae24e6%}
+|(identity)GlobalAdministrator|(hash)39126c2e5a43b63825006ded37c061fd789224517575c46a26cc5388b17a4e2c%}
 ]]>
           </BaseClassName>
         </settings>
@@ -205,7 +205,7 @@ if (UserControlParentID <= 0)
 {
 return GetResourceString("developmentformcontrolclass");
 }
-|(identity)GlobalAdministrator|(hash)309a3342a38a05f1f86dc2c764b26e46c5b3e5698971e2eeda7a5555d2a2f855%}
+|(identity)GlobalAdministrator|(hash)2bb782bae231b3d429940965e01211d27f298c293772924dcadf8d57371a840e%}
 ]]>
           </fieldcaption>
           <visiblemacro ismacro="true">
@@ -226,14 +226,14 @@ return GetResourceString("developmentformcontrolclass");
         <settings>
           <controlname>MultipleChoiceControl</controlname>
           <Macro>
-            <![CDATA[{%System.GetFieldGroups()|(identity)GlobalAdministrator|(hash)c336cb7eede9af71edc5afdb010df5e55a55c6f495f76ed7af7929f9f3b2d934%}]]>
+            <![CDATA[{%System.GetFieldGroups()|(identity)GlobalAdministrator|(hash)75c2293d33e132e1fdb33f1ad6b223556fc966c0dcb30ec039e94e1ebacf27e7%}]]>
           </Macro>
           <RepeatDirection>vertical</RepeatDirection>
           <RepeatLayout>Flow</RepeatLayout>
           <Separator>|</Separator>
           <SortItems>False</SortItems>
           <TextFormat>
-            <![CDATA[{% GetResourceString("TemplateDesigner.FieldTypes." + Text) |(identity)GlobalAdministrator|(hash)d5e572fdea1e19712555ccc50838a46d4054b852a1897f5c5037cc5a72f5bed1%}]]>
+            <![CDATA[{% GetResourceString("TemplateDesigner.FieldTypes." + Text) |(identity)GlobalAdministrator|(hash)28e818420c18132aa9fd8fbdbf639842b30bc3a10ea057c05f560b3f8def6666%}]]>
           </TextFormat>
         </settings>
       </field>

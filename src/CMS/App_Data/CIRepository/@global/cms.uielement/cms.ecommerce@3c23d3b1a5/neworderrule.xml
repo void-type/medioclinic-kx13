@@ -51,6 +51,6 @@
   <ElementSize>0</ElementSize>
   <ElementType>PageTemplate</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%Rule("CurrentUser.IsAuthorizedPerResource(\"CMS.Ecommerce\",\"ConfigurationGlobalModify\")", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"Permission\" ><p n=\"module\"><t>CMS.Ecommerce</t><v>CMS.Ecommerce</v><r>0</r><d>select module</d><vt>text</vt><tv>1</tv></p><p n=\"permission\"><t>ConfigurationGlobalModify</t><v>ConfigurationGlobalModify</v><r>0</r><d>select permission</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)86a46fc64c20b52beadef8db08cfcb6f08402f829588df655c0184938c7fddb4%}]]>
+    <![CDATA[{%Rule("CurrentUser.IsAuthorizedPerResource(\"CMS.Ecommerce\",\"ConfigurationGlobalModify\")", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"Permission\" ><p n=\"module\"><t>CMS.Ecommerce</t><v>CMS.Ecommerce</v><r>0</r><d>select module</d><vt>text</vt><tv>1</tv></p><p n=\"permission\"><t>ConfigurationGlobalModify</t><v>ConfigurationGlobalModify</v><r>0</r><d>select permission</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)3be416fd5d36eebd2a4bde08abe59047622ce6b93b47800d4c5ba40a843d6e6c%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

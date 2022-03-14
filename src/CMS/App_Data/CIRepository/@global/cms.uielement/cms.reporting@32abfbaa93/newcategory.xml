@@ -29,7 +29,7 @@
   <ElementProperties>
     <data>
       <aftersavescript>
-        <![CDATA[parent.location = '{% UIContext.GetElementUrl("cms.reporting", "reporting", false, 0, "parentobjectid=" + EditedObject.ID) |(identity)GlobalAdministrator|(hash)8202fa1ecf9b172e099cde65208984112bb000f4cbbdd2efb802f0b31cc1f522%}';]]>
+        <![CDATA[parent.location = '{% UIContext.GetElementUrl("cms.reporting", "reporting", false, 0, "parentobjectid=" + EditedObject.ID) |(identity)GlobalAdministrator|(hash)d42bf417e5fe2499ba26f75a608a0fe83cfed4c075c553d5577843e9acc24ced%}';]]>
       </aftersavescript>
       <defaultformlayout>Divs</defaultformlayout>
       <defaultfieldlayout>default</defaultfieldlayout>

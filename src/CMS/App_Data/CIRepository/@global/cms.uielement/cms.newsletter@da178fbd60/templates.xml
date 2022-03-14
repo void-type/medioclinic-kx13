@@ -30,7 +30,7 @@
     <Data>
       <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
       <EditActionURL>
-        <![CDATA[{% UIContext.GetElementUrl("CMS.Newsletter", "TemplateProperties", false, EditedObject.ID, "&objectid={0}&tabname=MarketingEmailTemplate.Editor") |(identity)GlobalAdministrator|(hash)b0af835fa34555ac8a0f843fb8682ea75156c0f9f784baefea3941ce3f779b0e%}]]>
+        <![CDATA[{% UIContext.GetElementUrl("CMS.Newsletter", "TemplateProperties", false, EditedObject.ID, "&objectid={0}&tabname=MarketingEmailTemplate.Editor") |(identity)GlobalAdministrator|(hash)b9b9694b181bb18c44e5c2f9b706463a3e32d450e14ba25abc673ef60f599a15%}]]>
       </EditActionURL>
       <EditInDialog>False</EditInDialog>
       <ExtenderClassName>CMS.Newsletters.Web.UI.EmailTemplateListExtender</ExtenderClassName>
@@ -43,7 +43,7 @@
       <OpenInDialog>False</OpenInDialog>
       <OrderBy>TemplateDisplayName</OrderBy>
       <WhereCondition>
-        <![CDATA[TemplateSiteID = {% SiteContext.CurrentSiteID |(identity)GlobalAdministrator|(hash)4c87ec20da5d5500e604b06d4130c645fd7e8066c52863f4ef486c2f60f05d7c%}]]>
+        <![CDATA[TemplateSiteID = {% SiteContext.CurrentSiteID |(identity)GlobalAdministrator|(hash)c0452a629169cbb6f27df7b46a4b0a29b9a6df23f1d32136cf18e4db44ca680f%}]]>
       </WhereCondition>
     </Data>
   </ElementProperties>

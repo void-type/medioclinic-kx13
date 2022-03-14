@@ -42,6 +42,6 @@
   </ElementTargetURL>
   <ElementType>Url</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%Debug.IsDebugEnabled("macros")|(identity)GlobalAdministrator|(hash)56fb19b1a6f758bfd2cb1c302b93fa629c0fa26aa65646619e37faf07fb7ec09%}]]>
+    <![CDATA[{%Debug.IsDebugEnabled("macros")|(identity)GlobalAdministrator|(hash)ab2a57c2c624053b67b5c53b41996b6337fe968741bda1c5a3b74883178f1f11%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

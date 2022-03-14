@@ -31,6 +31,6 @@
   <ElementTargetURL>~/CMSModules/Modules/Pages/Class/Code.aspx</ElementTargetURL>
   <ElementType>Url</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%module = System.GetObject("cms.resource",Convert.ToInt(QueryString.parentobjectid, 0)); if (module.ResourceIsInDevelopment != null) { return module.ResourceIsInDevelopment} else { return module.ResourceName.Equals("cms.customsystemmodule") }|(identity)GlobalAdministrator|(hash)03f682c7c50dcbd3ecfae635d7927d948175711f95ee3bd04fd128bf912f7a7c%}]]>
+    <![CDATA[{%module = System.GetObject("cms.resource",Convert.ToInt(QueryString.parentobjectid, 0)); if (module.ResourceIsInDevelopment != null) { return module.ResourceIsInDevelopment} else { return module.ResourceName.Equals("cms.customsystemmodule") }|(identity)GlobalAdministrator|(hash)a0872d7e8ec383635032d46be053e0bcaf8d8a321705595a7f05127733f6635f%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

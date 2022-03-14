@@ -52,7 +52,7 @@ FROM {%DatabaseSchema%}.Func_Analytics_EnsureDates (@FromDate,@ToDate,'Week') AS
       <displaylegend>True</displaylegend>
       <exportenabled>True</exportenabled>
       <itemvalueformat>
-        <![CDATA[{%Format(ToDouble(pval, "0.0"), "{0:0.0}")|(identity)GlobalAdministrator|(hash)8964fd68727d9a26e8e7a35ff3ae365454f4ee3a60aed5ddf27467c13e492829%}% ({%yval%})]]>
+        <![CDATA[{%Format(ToDouble(pval, "0.0"), "{0:0.0}")|(identity)GlobalAdministrator|(hash)43d44063a8697053838c71355fef25fa724cd972820a1584cde281c79b20a0bb%}% ({%yval%})]]>
       </itemvalueformat>
       <legendinside>False</legendinside>
       <legendposition>Right</legendposition>

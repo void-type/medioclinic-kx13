@@ -35,7 +35,7 @@
           <fieldcaption>{$general.codename$}</fieldcaption>
           <fielddescription>{$om.activitytype.name.description$}</fielddescription>
           <visiblemacro ismacro="true">
-            <![CDATA[{%ActivityTypeIsCustom.Value == true|(identity)GlobalAdministrator|(hash)04561a8a827ea666acbfac80153bc639e94c9465699f58c51f9ab941b2afbb0f%}]]>
+            <![CDATA[{%ActivityTypeIsCustom.Value == true|(identity)GlobalAdministrator|(hash)012e74be3d3d03b5a19f1acdcd91892fbc02dcb9cfa95d7a3dd600d53e3cac81%}]]>
           </visiblemacro>
         </properties>
         <settings>
@@ -69,7 +69,7 @@
             <![CDATA[{$om.activitytype.manualcreationallowed.description$}]]>
           </fielddescription>
           <visiblemacro ismacro="true">
-            <![CDATA[{%ActivityTypeIsCustom.Value || SystemContext.DevelopmentMode|(identity)GlobalAdministrator|(hash)7d14643129456a803b6532bac6f999189c37452479ed4fdedc5fd9dae37cc30e%}]]>
+            <![CDATA[{%ActivityTypeIsCustom.Value || SystemContext.DevelopmentMode|(identity)GlobalAdministrator|(hash)3dcc820eb6aacd68b82d1bf62ddd435de68578f30c2087f77c2d6c17b2d3baa2%}]]>
           </visiblemacro>
         </properties>
         <settings>
@@ -82,7 +82,7 @@
           <fieldcaption>{$general.enabled$}</fieldcaption>
           <fielddescription>{$om.activitytype.enabled.description$}</fielddescription>
           <visiblemacro ismacro="true">
-            <![CDATA[{%ActivityTypeIsCustom.Value || SystemContext.DevelopmentMode|(identity)GlobalAdministrator|(hash)7d14643129456a803b6532bac6f999189c37452479ed4fdedc5fd9dae37cc30e%}]]>
+            <![CDATA[{%ActivityTypeIsCustom.Value || SystemContext.DevelopmentMode|(identity)GlobalAdministrator|(hash)3dcc820eb6aacd68b82d1bf62ddd435de68578f30c2087f77c2d6c17b2d3baa2%}]]>
           </visiblemacro>
         </properties>
         <settings>

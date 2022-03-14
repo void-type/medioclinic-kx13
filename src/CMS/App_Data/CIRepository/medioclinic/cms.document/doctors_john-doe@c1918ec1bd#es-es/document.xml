@@ -7,7 +7,7 @@
     <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
     <ObjectType>cms.user</ObjectType>
   </DocumentCreatedByUserID>
-  <DocumentCreatedWhen>2020-11-19 20:35:57Z</DocumentCreatedWhen>
+  <DocumentCreatedWhen>2020-11-19 19:35:57Z</DocumentCreatedWhen>
   <DocumentCulture>es-ES</DocumentCulture>
   <DocumentGUID>f3d9ee42-7bbe-44ba-89c1-871de0e4efa8</DocumentGUID>
   <DocumentModifiedByUserID>
@@ -15,7 +15,7 @@
     <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
     <ObjectType>cms.user</ObjectType>
   </DocumentModifiedByUserID>
-  <DocumentModifiedWhen>2020-11-25 15:30:01Z</DocumentModifiedWhen>
+  <DocumentModifiedWhen>2020-11-25 14:30:01Z</DocumentModifiedWhen>
   <DocumentName>John Doe</DocumentName>
   <DocumentNodeID>
     <CodeName>/Doctors/John-Doe</CodeName>

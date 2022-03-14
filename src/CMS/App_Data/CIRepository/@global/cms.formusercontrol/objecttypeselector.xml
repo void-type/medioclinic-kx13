@@ -96,7 +96,7 @@ ObjectTypes.AllObjectTypes;All object types
             <![CDATA[The field represents Javascript code that is executed when selected item is changed.]]>
           </fielddescription>
           <defaultvalue>
-            <![CDATA[{% GetObjectTypeName(Text) + FormatNotEmpty(Value, " ({0})") |(identity)GlobalAdministrator|(hash)603a10b708232e7c3a666cb5155805cf36b499a6159502d576657a5e3d477420%}]]>
+            <![CDATA[{% GetObjectTypeName(Text) + FormatNotEmpty(Value, " ({0})") |(identity)GlobalAdministrator|(hash)404b53099f0e27814a831749d8e5eebe02473d0d3221ac9ce68cc61ccdb4694d%}]]>
           </defaultvalue>
           <fieldcaption>OnChange client script</fieldcaption>
           <visiblemacro />

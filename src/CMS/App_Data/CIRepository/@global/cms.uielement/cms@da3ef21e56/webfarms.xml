@@ -38,6 +38,6 @@
   <ElementTargetURL>~/CMSModules/System/Debug/Log.aspx?name=webfarm</ElementTargetURL>
   <ElementType>Url</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%Debug.IsDebugEnabled("webfarm") && (GlobalObjects.WebFarmServers.Count > 0)|(identity)GlobalAdministrator|(hash)dbff6b0013ece4b1bdb2cde326fe076562b970d1409626f924f6ec351245788c%}]]>
+    <![CDATA[{%Debug.IsDebugEnabled("webfarm") && (GlobalObjects.WebFarmServers.Count > 0)|(identity)GlobalAdministrator|(hash)6feb3bdd794b80ef3cf4bd05d9c8c146dc8139031dfee8b4e058dbf921411d12%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

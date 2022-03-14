@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.uielement>
   <ElementAccessCondition>
-    <![CDATA[{%CurrentUser.IsAuthorizedPerResource("CMS.ContactManagement", "ReadConfiguration")|(identity)GlobalAdministrator|(hash)e97d48a0c7e8158c3de02e583f6c374dbdf42ffa995570ac76394d680c7cf1a9%}]]>
+    <![CDATA[{%CurrentUser.IsAuthorizedPerResource("CMS.ContactManagement", "ReadConfiguration")|(identity)GlobalAdministrator|(hash)9be07b9d254b83d74f7b28c33d832e1a687d36214a9b6545a63f889c1b86df81%}]]>
   </ElementAccessCondition>
   <ElementCaption>{$macros.macrorules$}</ElementCaption>
   <ElementCheckModuleReadPermission>True</ElementCheckModuleReadPermission>
@@ -59,6 +59,6 @@
   <ElementSize>0</ElementSize>
   <ElementType>PageTemplate</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%CurrentUser.IsAuthorizedPerResource("CMS.ContactManagement", "ReadConfiguration")|(identity)GlobalAdministrator|(hash)e97d48a0c7e8158c3de02e583f6c374dbdf42ffa995570ac76394d680c7cf1a9%}]]>
+    <![CDATA[{%CurrentUser.IsAuthorizedPerResource("CMS.ContactManagement", "ReadConfiguration")|(identity)GlobalAdministrator|(hash)9be07b9d254b83d74f7b28c33d832e1a687d36214a9b6545a63f889c1b86df81%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

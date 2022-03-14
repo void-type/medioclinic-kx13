@@ -152,7 +152,7 @@
           <property name="allowempty"></property>
           <property name="allowglobal"></property>
           <property name="allowsubtabs" ismacro="true">
-            <![CDATA[{% UIContext.AllowSubTabs |(identity)GlobalAdministrator|(hash)dc9360ee99020cfd534dd892bc9ab7c6537de077c3969d357858bfa6f8c62959%}]]>
+            <![CDATA[{% UIContext.AllowSubTabs |(identity)GlobalAdministrator|(hash)9a7153df652337262419330f4d2c2b5219f5c28cd0564425ee3824d06bdf78b2%}]]>
           </property>
           <property name="cat_open_ajax"></property>
           <property name="cat_open_codebehind">True</property>

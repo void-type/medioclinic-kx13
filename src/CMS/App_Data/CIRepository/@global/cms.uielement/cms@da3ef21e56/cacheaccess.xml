@@ -38,6 +38,6 @@
   <ElementTargetURL>~/CMSModules/System/Debug/Log.aspx?name=cache</ElementTargetURL>
   <ElementType>Url</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%Debug.IsDebugEnabled("cache")|(identity)GlobalAdministrator|(hash)a28fb893ecc74987d98a142b9fbb95e91aa825772977dac29e9686ff32a22d59%}]]>
+    <![CDATA[{%Debug.IsDebugEnabled("cache")|(identity)GlobalAdministrator|(hash)4ca4a6f3454d70d7a73d6cefd141ff65b6ed5fd254a3500293e40dda5737b2da%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

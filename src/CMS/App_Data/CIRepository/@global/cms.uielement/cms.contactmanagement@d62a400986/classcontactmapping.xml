@@ -43,7 +43,7 @@
 <![CDATA[
 {%className = EditedObject.ClassName.ToLower();
   
-return ((className == "cms.user") || (className == "newsletter.subscriber") || (className == "ecommerce.customer"));|(identity)GlobalAdministrator|(hash)4cb9e3c9cbd7c0c976f8aa11e37b7307e1999e0bacd6c85a8aedf59d1929e6fa%}
+return ((className == "cms.user") || (className == "newsletter.subscriber") || (className == "ecommerce.customer"));|(identity)GlobalAdministrator|(hash)b17479f9c27182261fdb411b5ffe14c64a42d6c9067a0e420301aedb13ecfb71%}
 ]]>
   </ElementVisibilityCondition>
 </cms.uielement>

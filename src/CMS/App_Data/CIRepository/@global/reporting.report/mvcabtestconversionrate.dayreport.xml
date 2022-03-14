@@ -25,7 +25,7 @@
       <field column="FromDate" columntype="datetime" guid="f3ee01cd-1abc-4f24-b402-990e9ace0840" visible="true">
         <properties>
           <defaultvalue ismacro="true">
-            <![CDATA[{%CurrentDateTime.AddMonths(-1).Date|(identity)GlobalAdministrator|(hash)bfa98d43267bc87f2b419ad67c8f586e54822a2baa32f3b786145f887de30ab4%}]]>
+            <![CDATA[{%CurrentDateTime.AddMonths(-1).Date|(identity)GlobalAdministrator|(hash)02b59bef81d0bfbe833a248df0c08bbf46c653bad5c9728cec3885b5a7c5a792%}]]>
           </defaultvalue>
           <fieldcaption>From</fieldcaption>
         </properties>
@@ -39,7 +39,7 @@
       <field column="ToDate" columntype="datetime" guid="eba38d8b-5083-4c5a-978a-fca08d6a9985" visible="true">
         <properties>
           <defaultvalue ismacro="true">
-            <![CDATA[{%CurrentDateTime.AddMonths(1).Date|(identity)GlobalAdministrator|(hash)9638d2eeb8b45f058777ca98a21ec14833a61d850b7982024149675d5ad8d1eb%}]]>
+            <![CDATA[{%CurrentDateTime.AddMonths(1).Date|(identity)GlobalAdministrator|(hash)26958268e20552ef0f922263272d7721f472a5088df3a8717a18331b8c28ffba%}]]>
           </defaultvalue>
           <fieldcaption>To</fieldcaption>
         </properties>

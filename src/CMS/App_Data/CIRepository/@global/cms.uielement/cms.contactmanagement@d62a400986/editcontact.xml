@@ -30,7 +30,7 @@
     <Data>
       <AllowSubTabs>True</AllowSubTabs>
       <breadcrumbsitemtext>
-        <![CDATA[{%EditedObject.ContactDescriptiveName|(identity)GlobalAdministrator|(hash)f528da26517916c3e0b047a62a2a033be6a5f898e4c5cd70eb1ad339ab734142%}]]>
+        <![CDATA[{%EditedObject.ContactDescriptiveName|(identity)GlobalAdministrator|(hash)d6a016d96d0c90c8fb7065a693f3b4395bd8969317efe5103f3fd447bd30bb3b%}]]>
       </breadcrumbsitemtext>
       <DisplayBreadcrumbs>True</DisplayBreadcrumbs>
       <DisplayTitleInTabs>False</DisplayTitleInTabs>
@@ -41,7 +41,7 @@
       <RememberSelectedTab>False</RememberSelectedTab>
       <TabExtender>CMS.ContactManagement.Web.UI</TabExtender>
       <TitleText ismacro="True">
-        <![CDATA[{% GetResourceString("om.contact.general.edit") + " - " + EditedObject.ContactDescriptiveName |(identity)GlobalAdministrator|(hash)cb7efdfe18a2667fc7dd4400cd98730cb6c3997a5f25fe4d4697310569a07403%}]]>
+        <![CDATA[{% GetResourceString("om.contact.general.edit") + " - " + EditedObject.ContactDescriptiveName |(identity)GlobalAdministrator|(hash)0822c449a2e8e548b1c4e2189ca474b6efe83b606565a689e28fe03853fb1e06%}]]>
       </TitleText>
     </Data>
   </ElementProperties>

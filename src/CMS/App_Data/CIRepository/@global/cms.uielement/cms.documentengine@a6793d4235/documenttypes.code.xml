@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.uielement>
   <ElementAccessCondition>
-    <![CDATA[{%Rule("(CurrentUser.CheckPrivilegeLevel(UserPrivilegeLevelEnum.GlobalAdmin))", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"CurrentUserHasPrivilegeLevel\" ><p n=\"_has\"><t>has</t><v></v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p><p n=\"privilege\"><t>GlobalAdmin</t><v>GlobalAdmin</v><r>0</r><d>select level</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)4f2592d9c5250f9c6dfa4f3f0d94eb78098cfacdc31f7c86a231ccef8a9f8e1e%}]]>
+    <![CDATA[{%Rule("(CurrentUser.CheckPrivilegeLevel(UserPrivilegeLevelEnum.GlobalAdmin))", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"CurrentUserHasPrivilegeLevel\" ><p n=\"_has\"><t>has</t><v></v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p><p n=\"privilege\"><t>GlobalAdmin</t><v>GlobalAdmin</v><r>0</r><d>select level</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)d7fc777fa7deed1f0b8510a1256b1101e2b2282a9711e131d1ba17ce070484f5%}]]>
   </ElementAccessCondition>
   <ElementCaption>{$documenttypes.code$}</ElementCaption>
   <ElementCheckModuleReadPermission>True</ElementCheckModuleReadPermission>

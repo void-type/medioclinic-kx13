@@ -33,7 +33,7 @@
                         <td style="text-align: left;" valign="bottom">
                             <strong>Invoice number:</strong>
                         </td>
-                        <td style="text-align: right; padding-right: 10px">{%Order.OrderInvoiceNumber|(identity)GlobalAdministrator|(hash)957f4dc14b7f6dfe4d8572b6f6a5d7720e399812b2155c1e718e8c6aa328c1fc%}
+                        <td style="text-align: right; padding-right: 10px">{%Order.OrderInvoiceNumber|(identity)GlobalAdministrator|(hash)5ed4bfcd3432329ffd5cf7369435e5e0e787c620557e88df821d044b0529f10a%}
                         </td>
                     </tr>
                 </table>
@@ -46,14 +46,14 @@
                         <td style="text-align: left;" valign="bottom">
                             <strong>Order date:</strong>
                         </td>
-                        <td style="text-align: right; padding-right: 10px">{% GetCurrentDateTimeString(Format(Order.OrderDate, "{0:g}"), (Customer.CustomerUser == null) ? "" : Customer.CustomerUser.UserName)|(identity)GlobalAdministrator|(hash)76d3415d6c1f936222221c61e434b1a9937ca06255e548af23f66ba8917fa4d5%}
+                        <td style="text-align: right; padding-right: 10px">{% GetCurrentDateTimeString(Format(Order.OrderDate, "{0:g}"), (Customer.CustomerUser == null) ? "" : Customer.CustomerUser.UserName)|(identity)GlobalAdministrator|(hash)27c64476c1cb3c09293d92b57099b844e57d380f3e0fe60653a88905c4906997%}
                         </td>
                     </tr>
                     <tr>
                         <td style="text-align: left;" valign="bottom">
                             <strong>Order status:</strong>
                         </td>
-                        <td style="text-align: right; padding-right: 10px">{%GetResourceString(OrderStatus.StatusDisplayName)|(identity)GlobalAdministrator|(hash)d883bbbc2b9766c19ac104884ad2bf73db83bbb91aa638240fbda5b8e1da7d42%}
+                        <td style="text-align: right; padding-right: 10px">{%GetResourceString(OrderStatus.StatusDisplayName)|(identity)GlobalAdministrator|(hash)6431969e35ebf518a2bf344abc5073312acd673c16f4dd40957381a4eb1ca14c%}
                         </td>
                     </tr>
                 </table>
@@ -77,10 +77,10 @@
                 <span style="font-weight: bold">Customer </span>
                 <br />
                 <br />
-                {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address")|(identity)GlobalAdministrator|(hash)04ed273055508dff8753af9681be650141ca98fc9afe676836dcb9fbb478e32c%}
+                {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address")|(identity)GlobalAdministrator|(hash)f33f253ce851549db77fb636550349aa016d5d0a7ac5bf70adcf7524923f79fc%}
       <br />
                 <strong>Company address:</strong>
-                {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address")|(identity)GlobalAdministrator|(hash)b76071f4591c93e3cb4621c78811c44f951714de4e9e6f44289f958a30103ef0%}
+                {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address")|(identity)GlobalAdministrator|(hash)87dce9e1ec596617aca587c1edbaebed0e083c48b133f5e6906bbd7b38aa967f%}
       <br />
             </td>
         </tr>
@@ -93,7 +93,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: center">{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(identity)GlobalAdministrator|(hash)35851ca0e013cb9038857a6ab618cf84ae07745864078e7efc4402f793bf07db%}
+                        <td style="text-align: center">{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(identity)GlobalAdministrator|(hash)67f656c2718d8e4c86cc222f4ba05489d7933322072c02cbfe9696bf55aec0e3%}
                         </td>
                     </tr>
                 </table>
@@ -108,7 +108,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: center">{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(identity)GlobalAdministrator|(hash)fb9a02090886d21910a577950e5a349ea00dc60e06ca5b969a8887c32e7a5848%}
+                        <td style="text-align: center">{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(identity)GlobalAdministrator|(hash)a2d3775d985ebb0695ea76c3b5509d8b0ded4a28024c0d45ddce95623479785d%}
                         </td>
                     </tr>
                 </table>
@@ -116,24 +116,24 @@
         </tr>
 
         <tr>
-            <td colspan="2" style="text-align: left; padding: 8px">{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter") |(identity)GlobalAdministrator|(hash)9acedd94f9ba66ab148d97aeab6f3e957ef467535c22724676b527b76183e8a7%} 
+            <td colspan="2" style="text-align: left; padding: 8px">{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter") |(identity)GlobalAdministrator|(hash)8601e4e42d7e343a56ce264e8cca666e17f081c6fa547c47a9021403640c1073%} 
 			<hr size="1" />
                 <table cellpadding="5" width="50%" style="float: right;">
                     <tbody>
                         <tr>
                             <td>Subtotal</td>
-                            <td style="text-align: right; padding-right: 0px">{% TotalItemsPrice.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)5b06b35d374a92b86b0715713dbf57ea65b2fbcafac6e3c16d5966aea0ebb5db%}</td>
+                            <td style="text-align: right; padding-right: 0px">{% TotalItemsPrice.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)a49179e09d92c38a4c02941b6e3a9ac8a05ff86982edf5efed2298fe0a9bb64f%}</td>
                         </tr>
                         <tr>
                             <td>Shipping</td>
-                            <td style="text-align: right; padding-right: 0px">{% TotalShipping.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)118038cfbf9822a4436fd7cb431a37e05e32f7cdc64a062d0eff8b517e7afd1f%}</td>
+                            <td style="text-align: right; padding-right: 0px">{% TotalShipping.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)2276deb07ada680d65c0c6ef140324d01e3a897a18f24038cc34280d4ed8f442%}</td>
                         </tr>
                        <tr>
-                            <td colspan="2" style="padding: 0; text-align: right;">{% OtherPaymentsSummary.Any() ? OtherPaymentsSummary.ApplyTransformation("Ecommerce.Transformations.Order_OrderRelatedDiscountsContent", "Ecommerce.Transformations.Order_OrderRelatedDiscountsHeader", "Ecommerce.Transformations.Order_OrderRelatedDiscountsFooter") : "" |(identity)GlobalAdministrator|(hash)84b71dc7df668185d06804141e08f79cd37630d8a094dcfa1a267c660d1e1821%}</td>
+                            <td colspan="2" style="padding: 0; text-align: right;">{% OtherPaymentsSummary.Any() ? OtherPaymentsSummary.ApplyTransformation("Ecommerce.Transformations.Order_OrderRelatedDiscountsContent", "Ecommerce.Transformations.Order_OrderRelatedDiscountsHeader", "Ecommerce.Transformations.Order_OrderRelatedDiscountsFooter") : "" |(identity)GlobalAdministrator|(hash)ec2acd6a381d771af597f37f260083e963a90f55c147d9e9d7986af00cf89bc6%}</td>
                         </tr>
                         <tr>
                             <td><span style="color: black; font-weight: bold">TOTAL (incl. tax):</span></td>
-                            <td style="text-align: right; padding-right: 0px; color: black; font-weight: bold">{% GrandTotal.Format(Currency.CurrencyFormatString)|(encode)true|(identity)GlobalAdministrator|(hash)b0e81ff2ebff329b1fec1f959e29009e69c71f225fb5ebf7df43616852fb4528%}</td>
+                            <td style="text-align: right; padding-right: 0px; color: black; font-weight: bold">{% GrandTotal.Format(Currency.CurrencyFormatString)|(encode)true|(identity)GlobalAdministrator|(hash)52a0d9fb04df819cc130b8e48d0dc8e37941ab24419b2b81ba1a7c5fe4d49a32%}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -148,7 +148,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left">{%Order.OrderNote|(encode)true|(identity)GlobalAdministrator|(hash)1743e556df5e9f989d337de66bd983c67047aeec2376fe69b655494956dd2af6%}
+                        <td style="text-align: left">{%Order.OrderNote|(encode)true|(identity)GlobalAdministrator|(hash)8f8b1766624b92fa8b73abc174c63630316ddee96ec00eb39faba9b28d3ad706%}
                         </td>
                     </tr>
                 </table>

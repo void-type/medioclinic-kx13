@@ -30,7 +30,7 @@
     <Data>
       <AllowSubTabs>True</AllowSubTabs>
       <breadcrumbsitemtext>
-        <![CDATA[{%EditedObject.DisplayName|(identity)GlobalAdministrator|(hash)5cd7be26efbc59154543d4e0a03ab73c976a483f888681df26f3a9a16be3171e%}]]>
+        <![CDATA[{%EditedObject.DisplayName|(identity)GlobalAdministrator|(hash)832130bdfc40f2a87bbcffc5ad3bbc0dbdce0da4e405eb3de653530abd2f1a72%}]]>
       </breadcrumbsitemtext>
       <DisplayBreadcrumbs>True</DisplayBreadcrumbs>
       <DisplayTitleInTabs>False</DisplayTitleInTabs>

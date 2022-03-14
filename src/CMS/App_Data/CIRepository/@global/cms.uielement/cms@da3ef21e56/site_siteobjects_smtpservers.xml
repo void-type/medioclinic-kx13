@@ -33,7 +33,7 @@
       <checkmodifypermission>True</checkmodifypermission>
       <resourceprefix>cms_smtpserver.select</resourceprefix>
       <listprefacetext>
-        <![CDATA[{% String.FormatString(GetResourceString("site_edit_siteobjects.objectsavailable"), GetResourceString("objecttasks.cms_smtpserver").ToLower()) |(identity)GlobalAdministrator|(hash)9821988fd13901b3aabcb8390a7298fc61848783cd39b99be147b2d05dedf193%}]]>
+        <![CDATA[{% String.FormatString(GetResourceString("site_edit_siteobjects.objectsavailable"), GetResourceString("objecttasks.cms_smtpserver").ToLower()) |(identity)GlobalAdministrator|(hash)31571a90c1eee1bfc81190458acab3e34873fc8d91c6bc56da76998dba5ae0ca%}]]>
       </listprefacetext>
       <displaybreadcrumbs>False</displaybreadcrumbs>
       <dialogwherecondition>

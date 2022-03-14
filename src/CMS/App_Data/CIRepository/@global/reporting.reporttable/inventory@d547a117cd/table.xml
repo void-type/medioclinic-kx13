@@ -8,9 +8,9 @@
 <![CDATA[
 /* Selects the products meeting the conditions from the filter */
 DECLARE @GlobalProducts bit;
-SET @GlobalProducts = {%Settings.CMSStoreAllowGlobalProducts?1:0|(identity)GlobalAdministrator|(hash)6ed12ae171b6a1e3fc071d6aaff021155b3eccc71e3e7ae6c45cac6e0131b771%};
+SET @GlobalProducts = {%Settings.CMSStoreAllowGlobalProducts?1:0|(identity)GlobalAdministrator|(hash)01d07e9b60466cd556db0832349500d2bf548bd9e660e047d0a79aaa7968d653%};
 DECLARE @GlobalOptions bit;
-SET @GlobalOptions = {%Settings.CMSStoreAllowGlobalProductOptions?1:0|(identity)GlobalAdministrator|(hash)d2b8dd765d82293aa19542cb08aeaf85298f73c8cdaaad2ee3b63df2157a458a%};
+SET @GlobalOptions = {%Settings.CMSStoreAllowGlobalProductOptions?1:0|(identity)GlobalAdministrator|(hash)bcd9624abac7800157f919b1fee567a6af2867b36475205604b9fdcb6c9aded5%};
 SELECT 
    ISNULL(parent.SKUName + ': ', '') + product.SKUName + ISNULL(' (' + COM_OptionCategory.CategoryDisplayName + ')', '') AS '{$product_list.productname$}',
    product.SKUNumber AS '{$ecommerce.report_productnumber$}',

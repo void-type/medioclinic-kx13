@@ -17,7 +17,7 @@
         </settings>
         <properties>
           <visiblemacro ismacro="true">
-            <![CDATA[{%Settings.CMSStoreAllowGlobalDepartments|(identity)GlobalAdministrator|(hash)cf885527208901d298b34845a7caed963f129dd44fdff46969026d88521cd35f%}]]>
+            <![CDATA[{%Settings.CMSStoreAllowGlobalDepartments|(identity)GlobalAdministrator|(hash)a0bb15ee43988b5651984876e79cfaa8436e77fa8c1303675cb722348d1c82d0%}]]>
           </visiblemacro>
         </properties>
       </field>

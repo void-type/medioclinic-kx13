@@ -47,7 +47,7 @@
                 <Text />
                 <Tooltip />
                 <Condition>
-                  <![CDATA[{%Rule("(Contact.DidActivities(\"purchase\", ToInt(10), false))", "<rules><r pos=\"0\" par=\"\" op=\"or\" n=\"CMSContactHasDoneFollowingActivitiesInTheLastXDays\" ><p n=\"activities\"><t>Purchase</t><v>purchase</v><r>1</r><d>select activities</d><vt>text</vt><tv>0</tv></p><p n=\"days\"><t>10</t><v>10</v><r>0</r><d>enter days</d><vt>integer</vt><tv>1</tv></p><p n=\"_any\"><t>any</t><v>false</v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p><p n=\"_perfectum\"><t>has</t><v></v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)d502a93ee5fca812875c0115b6fc5d9abaef56929871e81034e2b5ae5b2a9485%}]]>
+                  <![CDATA[{%Rule("(Contact.DidActivities(\"purchase\", ToInt(10), false))", "<rules><r pos=\"0\" par=\"\" op=\"or\" n=\"CMSContactHasDoneFollowingActivitiesInTheLastXDays\" ><p n=\"activities\"><t>Purchase</t><v>purchase</v><r>1</r><d>select activities</d><vt>text</vt><tv>0</tv></p><p n=\"days\"><t>10</t><v>10</v><r>0</r><d>enter days</d><vt>integer</vt><tv>1</tv></p><p n=\"_any\"><t>any</t><v>false</v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p><p n=\"_perfectum\"><t>has</t><v></v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)e18ec0d0c4cd210bf1ba0d9e65b68ca9e8a48a7a6515066ea72e2c354c9417b9%}]]>
                 </Condition>
                 <Type>1</Type>
                 <StepRolesSecurity>0</StepRolesSecurity>
@@ -80,7 +80,7 @@
                 <Text />
                 <Tooltip />
                 <Condition>
-                  <![CDATA[{%Rule("(Contact.ContactEmail.Contains(\"@\"))", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"CMSContactFieldContainsValue\" ><p n=\"field\"><t>Email address</t><v>ContactEmail</v><r>1</r><d>select field</d><vt>text</vt><tv>0</tv></p><p n=\"op\"><t>contains</t><v>Contains</v><r>0</r><d>select operator</d><vt>text</vt><tv>0</tv></p><p n=\"value\"><t>@</t><v>@</v><r>0</r><d>enter value</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)9ef1e6599d178fc4efadb9cf4cd8f63880bb0c43bbe7d168beca389b18144550%}]]>
+                  <![CDATA[{%Rule("(Contact.ContactEmail.Contains(\"@\"))", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"CMSContactFieldContainsValue\" ><p n=\"field\"><t>Email address</t><v>ContactEmail</v><r>1</r><d>select field</d><vt>text</vt><tv>0</tv></p><p n=\"op\"><t>contains</t><v>Contains</v><r>0</r><d>select operator</d><vt>text</vt><tv>0</tv></p><p n=\"value\"><t>@</t><v>@</v><r>0</r><d>enter value</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)58a04f1f0e31cd56e9ac04e04bbf8a5427f2d722971177965bdbde2a15617ff6%}]]>
                 </Condition>
                 <Type>1</Type>
                 <StepRolesSecurity>0</StepRolesSecurity>
@@ -297,7 +297,7 @@ Alternatively, you can replace this step with any desired marketing actions.
           <Type>TimeBased</Type>
           <ObjectType>cms.objectscheduledtask</ObjectType>
           <MacroCondition>
-            <![CDATA[{%Rule("(selectedDay = DateTime.Now.AddDays(ToInt(0));\r\nContact.ContactBirthday != null && (Contact.ContactBirthday.Month == selectedDay.Month && Contact.ContactBirthday.Day == selectedDay.Day);)", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"CMSContactHasBirthday\" ><p n=\"days\"><t>today</t><v>0</v><r>1</r><d>select day</d><vt>integer</vt><tv>0</tv></p><p n=\"_is\"><t>is</t><v></v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)76f71f392820abbc2f98f7e380d87d4085ae7296cb1d2ba12efdc31fcf9c01b3%}]]>
+            <![CDATA[{%Rule("(selectedDay = DateTime.Now.AddDays(ToInt(0));\r\nContact.ContactBirthday != null && (Contact.ContactBirthday.Month == selectedDay.Month && Contact.ContactBirthday.Day == selectedDay.Day);)", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"CMSContactHasBirthday\" ><p n=\"days\"><t>today</t><v>0</v><r>1</r><d>select day</d><vt>integer</vt><tv>0</tv></p><p n=\"_is\"><t>is</t><v></v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)84e3706726057d8aaee6fdb2852d8f36cf23dbfd6f8a8f6e03ba8b4a44435e9d%}]]>
           </MacroCondition>
           <Parameters xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d4p1:KeyValueOfstringstring>

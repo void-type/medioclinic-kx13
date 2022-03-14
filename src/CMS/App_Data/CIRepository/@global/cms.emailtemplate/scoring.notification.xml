@@ -7,13 +7,13 @@
 <![CDATA[
 This is an automatic notification sent by Kentico CMS.
 
-Contact {%Contact.ContactFirstName|(identity)GlobalAdministrator|(hash)3cf71a7a62a8707ee0be00756222b5b8175eef34f8dd3bf836689fc7d201c2c3%} {%Contact.ContactLastName|(identity)GlobalAdministrator|(hash)4ea5811caa4cadab00bbd5629089114082fd4b2e70abdd6ce6c1c62261142495%} has reached limit in score '{%Score.ScoreDisplayName|(identity)GlobalAdministrator|(hash)843534c6f0c38de7696c6368f33dae026a653ff482faeda4e2c5cda8b75018ab%}'.
+Contact {%Contact.ContactFirstName|(identity)GlobalAdministrator|(hash)398a6dcf6205973711e8b184fad13c4ac64d0d1eb52e4cae136be4b4d28a40a2%} {%Contact.ContactLastName|(identity)GlobalAdministrator|(hash)25a5c21bdaacb2d7f5f1a76f0d349f374e9f04e9a060787241c0eda2c32d8463%} has reached limit in score '{%Score.ScoreDisplayName|(identity)GlobalAdministrator|(hash)096660fdc19b1a6f82fc8797a140dbc95102474d79efe9ac17522dc23c4150dd%}'.
 
 Contact's current score is {%ScoreValue%}.
 ]]>
   </EmailTemplatePlainText>
   <EmailTemplateSubject>
-    <![CDATA[{% GetResourceString("om.score.notificationsubject")|(recursive)true |(identity)GlobalAdministrator|(hash)821f4bfdec12d42d387402847d058e9dabad099a085da909d0ef0bd052327c15%}]]>
+    <![CDATA[{% GetResourceString("om.score.notificationsubject")|(recursive)true |(identity)GlobalAdministrator|(hash)aa179200f7195d7ff8b56f7ced225ab86ef9e2d6d88e067a7edb1cd73980fbad%}]]>
   </EmailTemplateSubject>
   <EmailTemplateText>
 <![CDATA[
@@ -25,7 +25,7 @@ Contact's current score is {%ScoreValue%}.
     This is an automatic notification sent by Kentico CMS.
     </p>
     <p>
-    Contact {%Contact.ContactFirstName|(identity)GlobalAdministrator|(hash)3cf71a7a62a8707ee0be00756222b5b8175eef34f8dd3bf836689fc7d201c2c3%} {%Contact.ContactLastName|(identity)GlobalAdministrator|(hash)4ea5811caa4cadab00bbd5629089114082fd4b2e70abdd6ce6c1c62261142495%} has reached limit in score '{%Score.ScoreDisplayName|(identity)GlobalAdministrator|(hash)843534c6f0c38de7696c6368f33dae026a653ff482faeda4e2c5cda8b75018ab%}'.
+    Contact {%Contact.ContactFirstName|(identity)GlobalAdministrator|(hash)398a6dcf6205973711e8b184fad13c4ac64d0d1eb52e4cae136be4b4d28a40a2%} {%Contact.ContactLastName|(identity)GlobalAdministrator|(hash)25a5c21bdaacb2d7f5f1a76f0d349f374e9f04e9a060787241c0eda2c32d8463%} has reached limit in score '{%Score.ScoreDisplayName|(identity)GlobalAdministrator|(hash)096660fdc19b1a6f82fc8797a140dbc95102474d79efe9ac17522dc23c4150dd%}'.
     </p>
     <p>
     Contact's current score is {%ScoreValue%}.

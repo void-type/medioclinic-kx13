@@ -31,7 +31,7 @@ if (TemplateType == "I") /* using I as email Issue, this is defined in EmailTemp
   { "NewsletterResolver" }
 else
   { "NewsletterConfirmationResolver" }
-|(identity)GlobalAdministrator|(hash)1595ee6cd3cb9634fff8f9e2cad2022d20eba8798f3eeee227c2f566486a2776%}
+|(identity)GlobalAdministrator|(hash)4cee9443432de4e1487df44dbe2406ab5c18fb9370c5287440f3dab0ebbaa727%}
 ]]>
           </ResolverName>
           <ShowBookmarks>False</ShowBookmarks>

@@ -28,7 +28,7 @@
         <properties>
           <fieldcaption>Category code name</fieldcaption>
           <visiblemacro ismacro="true">
-            <![CDATA[{%CategoryCodeName.Value != "/"|(identity)GlobalAdministrator|(hash)0ed17edc5714ad678bad80937c3efe664f8d4b66b308e97f2ca240b1cb052948%}]]>
+            <![CDATA[{%CategoryCodeName.Value != "/"|(identity)GlobalAdministrator|(hash)7b44a292a0cd6054dba799255fe5ad9274d8afbb27999a982985f1eb494646d9%}]]>
           </visiblemacro>
         </properties>
         <settings>

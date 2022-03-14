@@ -17,7 +17,7 @@
         <properties>
           <fieldcaption>{$general.name$}</fieldcaption>
           <visiblemacro ismacro="true">
-            <![CDATA[{%!String.IsNullOrEmpty(Value)|(identity)GlobalAdministrator|(hash)d87a6ff52803cf36256a21487b08d875bb11339b9f9231703938d4a9dd31a047%}]]>
+            <![CDATA[{%!String.IsNullOrEmpty(Value)|(identity)GlobalAdministrator|(hash)e02c65a4f83b868f702cb6ce3c45c69e4767b27702be276e826a89064435f651%}]]>
           </visiblemacro>
         </properties>
       </field>
@@ -42,7 +42,7 @@
         <settings>
           <controlname>LabelControl</controlname>
           <OutputFormat>
-            <![CDATA[{% GetResourceString("newsletterissuestatus." + ToStringRepresentation(Value, "CMS.Newsletters", "CMS.Newsletters.IssueStatusEnum")) |(identity)GlobalAdministrator|(hash)a5bfbb54083e932ee8d075fd68dbb21d6f63da47322086c6646e5446100a1bd6%}]]>
+            <![CDATA[{% GetResourceString("newsletterissuestatus." + ToStringRepresentation(Value, "CMS.Newsletters", "CMS.Newsletters.IssueStatusEnum")) |(identity)GlobalAdministrator|(hash)0de8fc77d07751167b0c776d1b141fbb529bb87763798af2d65a33920f3ceaf0%}]]>
           </OutputFormat>
         </settings>
         <properties>
@@ -67,7 +67,7 @@
         <properties>
           <fieldcaption>{$newsletters.isabtest$}</fieldcaption>
           <visiblemacro ismacro="true">
-            <![CDATA[{%LicenseHelper.CheckFeature(FeatureEnum.CampaignAndConversions)|(identity)GlobalAdministrator|(hash)39dc4c4d153abefbe0f3e23b5d7ee9810d94a4c1e85bb67aed9b4449bcd37df7%}]]>
+            <![CDATA[{%LicenseHelper.CheckFeature(FeatureEnum.CampaignAndConversions)|(identity)GlobalAdministrator|(hash)b4bc5c856d76db37ab8af137f1dec10d1a8e35531bbc5de58d35a6001be26e2b%}]]>
           </visiblemacro>
         </properties>
       </field>

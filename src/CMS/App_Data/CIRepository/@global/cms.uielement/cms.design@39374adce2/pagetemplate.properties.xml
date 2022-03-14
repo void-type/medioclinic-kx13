@@ -43,6 +43,6 @@
   <ElementSize>0</ElementSize>
   <ElementType>PageTemplate</ElementType>
   <ElementVisibilityCondition>
-    <![CDATA[{%EditedObject.PageTemplateType == "UI"|(identity)GlobalAdministrator|(hash)519e5b76f14e02daca0f47ea5993b4e45c9ed502dd1b7d2aac3169ab8980aaa4%}]]>
+    <![CDATA[{%EditedObject.PageTemplateType == "UI"|(identity)GlobalAdministrator|(hash)a9ba413f3b9045a64e9781367793c123d912dcee13da17128944904abcaa0e08%}]]>
   </ElementVisibilityCondition>
 </cms.uielement>

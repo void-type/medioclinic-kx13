@@ -35,7 +35,7 @@
   </ElementResourceID>
   <ElementSize>0</ElementSize>
   <ElementTargetURL>
-    <![CDATA[~/CMSModules/Modules/Pages/Class/AlternativeForm/General.aspx?altformid={%EditedObject.FormID|(identity)GlobalAdministrator|(hash)f625f5e37a0ed7d9f7553775462a98e13b38d9f5471730c07ea30de9f0d0a83c%}&classid={%EditedObject.FormClassID|(identity)GlobalAdministrator|(hash)a386ea45adf46f91c80ab4bd4e3e16ed94a18f548356450f26ccd240d2409129%}&moduleid={%EditedObjectParent.ClassResourceID|(identity)GlobalAdministrator|(hash)b59ad6cafe0076a2fab1ac8ed97b6f8187ca7c8a31b8f13641041166033809f7%}]]>
+    <![CDATA[~/CMSModules/Modules/Pages/Class/AlternativeForm/General.aspx?altformid={%EditedObject.FormID|(identity)GlobalAdministrator|(hash)68509a7852e4736f9c3950d3f894429862c7408fcac84377b580b2846a80a327%}&classid={%EditedObject.FormClassID|(identity)GlobalAdministrator|(hash)2524079dbb9a8ba570dc62b3879e60460fa78602df0606aeac479c5da7431b73%}&moduleid={%EditedObjectParent.ClassResourceID|(identity)GlobalAdministrator|(hash)7c682cbeac1101026d5be0a104260621991e6ffc2944970d431d1c5f3d253d9c%}]]>
   </ElementTargetURL>
   <ElementType>Url</ElementType>
 </cms.uielement>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.uielement>
   <ElementAccessCondition>
-    <![CDATA[{%EditedObject.ScorePersonaID == null|(identity)GlobalAdministrator|(hash)56e2d6d00da591fda1c67916b5a54d6eafb4762ae5eedda27912dfce283ddd61%}]]>
+    <![CDATA[{%EditedObject.ScorePersonaID == null|(identity)GlobalAdministrator|(hash)1b0a626a6d037d84930864eddc0bfb63654e4f1dbdb06217e3c63aae5dc988c0%}]]>
   </ElementAccessCondition>
   <ElementCheckModuleReadPermission>False</ElementCheckModuleReadPermission>
   <ElementDisplayName>{$general.general$}</ElementDisplayName>

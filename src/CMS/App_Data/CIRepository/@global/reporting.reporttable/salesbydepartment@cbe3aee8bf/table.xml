@@ -8,7 +8,7 @@
 <![CDATA[
 -- Changes must by reflected in both final select and @totalsum variable
 DECLARE @AllowGlobalDepartments bit;
-SET @AllowGlobalDepartments = {%Settings.CMSStoreAllowGlobalDepartments?1:0|(identity)GlobalAdministrator|(hash)5226e7bdc6fc0ca8b51d4c0598970ed11bf082c9420b1870171bd67dc3a2e5d7%};
+SET @AllowGlobalDepartments = {%Settings.CMSStoreAllowGlobalDepartments?1:0|(identity)GlobalAdministrator|(hash)4898a7744896c23c363e2c961d68cba332533ef097656f3caf7bc2e2435a422a%};
 DECLARE @totalsum float;
 SET @totalsum = 
    (SELECT

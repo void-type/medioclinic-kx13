@@ -76,7 +76,7 @@
         <properties>
           <defaultvalue>true</defaultvalue>
           <visiblemacro ismacro="true">
-            <![CDATA[{%FormMode == FormModeEnum.Insert|(identity)GlobalAdministrator|(hash)4a7ad74733128bc0adf8a7d17def2ce0d57500a8ed3ee3a1c394e039e3c50eeb%}]]>
+            <![CDATA[{%FormMode == FormModeEnum.Insert|(identity)GlobalAdministrator|(hash)06f5899e1be199c2fa1171bd6f367d203776e8f22c2482e7a67798488488e08c%}]]>
           </visiblemacro>
         </properties>
         <settings>

@@ -8,9 +8,9 @@
   <EmailTemplateName>Reporting_Subscription_information</EmailTemplateName>
   <EmailTemplatePlainText>
 <![CDATA[
-{%ReportSubscription.ReportSubscriptionSubject|(identity)GlobalAdministrator|(hash)9531775f0bd0eec11607b6da62c8bd60189946a8a392b81aa240bf4dd22753ee%}
+{%ReportSubscription.ReportSubscriptionSubject|(identity)GlobalAdministrator|(hash)4f5169d9dc7ce491a07ae7487ed225254cb4c142f3a63dfbc1edf1e7e4513b8e%}
 
-You have been successfully subscribed to {%ItemName%} report {%Report.ReportDisplayName |(identity)GlobalAdministrator|(hash)b1c46d3eba9d62b8d69f0bd1c93562d388a38bf6683edf6ebbac5c20fe90b754%}.
+You have been successfully subscribed to {%ItemName%} report {%Report.ReportDisplayName |(identity)GlobalAdministrator|(hash)04c6600841324bb64fdbc5933f59b279add02d3c644f4884cb65d3574024f930%}.
 
 Click here to unsubscribe:
 {%UnsubscriptionLink%}
@@ -30,10 +30,10 @@ Click here to unsubscribe:
 	  </style>   
 	</head>	
 	<body>
-      <h3>{%ReportSubscription.ReportSubscriptionSubject|(identity)GlobalAdministrator|(hash)9531775f0bd0eec11607b6da62c8bd60189946a8a392b81aa240bf4dd22753ee%}</h3>
+      <h3>{%ReportSubscription.ReportSubscriptionSubject|(identity)GlobalAdministrator|(hash)4f5169d9dc7ce491a07ae7487ed225254cb4c142f3a63dfbc1edf1e7e4513b8e%}</h3>
 	<p>
         You have been successfully subscribed to {%ItemName%}		
-       report <strong> {%Report.ReportDisplayName |(identity)GlobalAdministrator|(hash)b1c46d3eba9d62b8d69f0bd1c93562d388a38bf6683edf6ebbac5c20fe90b754%} </strong>.
+       report <strong> {%Report.ReportDisplayName |(identity)GlobalAdministrator|(hash)04c6600841324bb64fdbc5933f59b279add02d3c644f4884cb65d3574024f930%} </strong>.
 	<p/>
 	<p>
       <a href="{%UnsubscriptionLink%}">Click here to unsubscribe</a>

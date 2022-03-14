@@ -34,7 +34,7 @@
       <EditExtender>CMS.Modules.Web.UI</EditExtender>
       <ExtenderClassName>CMS.ModuleLicenses.Web.UI.ModuleLicenseKeyExtender</ExtenderClassName>
       <RedirectURL ismacro="True">
-        <![CDATA[{% UIContext.GetElementUrl("CMS.ModuleLicenses", "ModuleLicenses") |(identity)GlobalAdministrator|(hash)40dcf3e2ab3f06c925572d56b5964527c18825b37b670858de93d724daeb045a%}]]>
+        <![CDATA[{% UIContext.GetElementUrl("CMS.ModuleLicenses", "ModuleLicenses") |(identity)GlobalAdministrator|(hash)5ccc2359cce05548f7f0ddb5ac4f1195ca58108f2ed92ee0be781f24e210bae6%}]]>
       </RedirectURL>
     </Data>
   </ElementProperties>
