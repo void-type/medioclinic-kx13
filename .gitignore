@@ -283,7 +283,7 @@ CMS/CMSSiteUtils/ImportCMS/App_Data/CMSModules/SmartSearch/**
 !CMS/App_Data/CMSModules/SmartSearch/_Synonyms/**
 
 ### Xperience Roslyn ###
-!src/CMS/bin
-src/CMS/bin/*
-!src/CMS/bin/roslyn
-!src/CMS/bin/roslyn/**/*
+# !src/CMS/bin
+# src/CMS/bin/*
+# !src/CMS/bin/roslyn
+# !src/CMS/bin/roslyn/**/*
