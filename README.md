@@ -6,6 +6,9 @@ The CMS Administrator has no password.
 The SQL login should be restored with the bacpac, but you might have to edit the login to map to the db user.
 You need to make an IIS website at localhost and an application pointing to /src/CMS with an alias of medioclinic-cms.
 
+To build, run ./etc/formatAndBuild.ps1 with .NET SDK 3.1, then use Visual Studio to build the src/CMS/CMSApp.sln.
+For development of the live site, use ./etc/watchWeb.ps1.
+
 Everything below is from the README of that repository.
 
 ## About the repo
